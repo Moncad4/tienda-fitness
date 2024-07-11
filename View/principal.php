@@ -47,8 +47,86 @@
     </div>
   </div>
 
-  <section>
-    
+  <!-- seccion productos -->
+  <section class="seccion-producto">
+    <H2 class="titulo-productos">Productos</H2>
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+            <img src="./img/productos/suplemento1.PNG" alt="">
+            <div class="content">
+                <div class="title">MAGIC SLIDER</div>
+                <div class="type">FLOWER</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+                <div class="boton-producto">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/productos/suplemento2.PNG" alt="">
+            <div class="content">
+                <div class="title">MAGIC SLIDER</div>
+                <div class="type">NATURE</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+                <div class="boton-producto">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/productos/suplemento4.PNG" alt="">
+            <div class="content">
+                <div class="title">MAGIC SLIDER</div>
+                <div class="type">PLANT</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+                <div class="boton-producto">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./img/productos/suplemento3.PNG" alt="">
+            <div class="content">
+                <div class="title">MAGIC SLIDER</div>
+                <div class="type">NATURE</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                </div>
+                <div class="boton-producto">
+                    <button>SEE MORE</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="thumbnail">
+        <div class="item">
+            <img src="./img/productos/suplemento1.PNG" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/productos/suplemento2.PNG" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/productos/suplemento4.PNG" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/productos/suplemento3.PNG" alt="">
+        </div>
+      </div>
+
+      <div class="nextPrevArrows">
+        <button class="prev"> < </button>
+        <button class="next"> > </button>
+      </div>
+    </div>
   </section>
+  <script src="./js/inicio.js"></script>
 </body>
 </html>
