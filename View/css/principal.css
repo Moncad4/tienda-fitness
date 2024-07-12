@@ -118,7 +118,7 @@ a{
 }
 
 .imagen-inicio{
-  height: 33.5em;
+  height: 33.5rem;
 }
 
 /* seccion productos */
@@ -583,6 +583,7 @@ a{
 }
 
 /* footer */
+/* footer */
 .footer{
   height: 42vh;
   background-color: rgb(20, 10, 29);
@@ -611,6 +612,7 @@ a{
   width: 25%;
   text-align: center;
   margin-top: 40px;
+  height: 30vh;
 }
 
 .menu-footer h3{
@@ -618,9 +620,18 @@ a{
   margin-bottom: 15px;
 }
 
-.menu-footer ul li a{
+.menu-footer a{
   color: #c0afd6;
   margin-bottom: 8px;
+}
+
+.menu-footer ul li{
+  color: #c0afd6;
+  margin-bottom: 0.3em;
+}
+
+.menu-footer-lastli{
+  margin-bottom: 0.5em;
 }
 
 .politicas-footer{
@@ -634,7 +645,11 @@ a{
   margin-bottom: 15px;
 }
 
-.politicas-footer ul li a{
+.politicas-footer ul li{
+  margin-bottom: 0,4em;
+}
+
+.politicas-footer a{
   color: #c0afd6;
 }
 
@@ -659,6 +674,8 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(20, 10, 29);
+
 }
 
 .derechos-footer h4{
