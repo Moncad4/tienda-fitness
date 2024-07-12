@@ -16,9 +16,9 @@
         <div class="div-list-nav">
           <ul class="list-nav">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tienda</a></li>
+            <li><a href="./components/tienda.php">Tienda</a></li>
             <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Ayudas</a></li>
+            <li><a href="./components/ayudas.php">Ayudas</a></li>
             <li><a href="#">Contacto</a></li>
             <li class="inicio-sesion">
               <a href="#">
