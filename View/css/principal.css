@@ -21,7 +21,10 @@ a{
 
 .container-header{
   height: 4em;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: fixed;
+  z-index: 999;
 }
 
 .navegador{
@@ -70,6 +73,25 @@ a{
   width: 30px;
   height: 30px;
   margin-right: 8px;
+}
+
+.carrito-compras{
+  position: relative;
+  margin-right: 15px;
+}
+
+.carrito-compras span{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -10px;
 }
 
 .contenedor-inicio{
