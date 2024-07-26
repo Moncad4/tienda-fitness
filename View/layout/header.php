@@ -44,7 +44,14 @@ define('BASE_URL', 'http://localhost/tienda-fitness/');
 
     <div class="cartTab">
       <h2>Carrito de compras</h2>
-      <!-- <div class="listcart"></div> -->
+      <div class="listcart">
+        <p class="listPcart">
+        </p>
+        <p class="listPcart2">
+        </p>
+        <p class="listPcart3">
+        </p>
+      </div>
       <div class="btn-carrito">
         <button class="close-carrito">Close</button>
         <button class="checkout-carrito">Check Out</button>
