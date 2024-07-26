@@ -1,3 +1,7 @@
+/* Cambiar las clases de el botón days, arreglar los
+botones de las estrellas */
+
+
 /* Toda la tienda esta aqui */
 .mainshop-container{
   display: flex;
@@ -80,10 +84,6 @@
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.624);
   
 }
-.articleshop-maincards:hover{
-  background-color: rgb(0, 255, 0);
-
-}
 .artmaincard1{
   display: flex;
   flex-direction: column;
@@ -130,6 +130,8 @@
 /* Aquí esta el boton de compra y el info */
 .product-information{
   display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 .cart-btn {
   display: flex;
@@ -145,9 +147,8 @@
   overflow: hidden;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
   position: relative;
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
 }
-
 .icon-container {
   position: absolute;
   left: -50px;
@@ -162,12 +163,10 @@
   z-index: 2;
   transition-duration: .5s;
 }
-
 .icon {
   border-radius: 1px;
 }
-
-.adcart-text {
+.addcart-text {
   height: 100%;
   width: fit-content;
   display: flex;
@@ -179,22 +178,37 @@
   font-size: 1.04em;
   font-weight: 600;
 }
-
+.addcart-text:hover {
+  color: rgb(255, 255, 255);
+}
+.addcart-textindi{
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.04em;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-top: 0.3em;
+}
+.addcart-textindi:hover{
+  color: rgb(149, 0, 255);
+}
 .cart-btn:hover .icon-container {
   transform: translateX(58px);
   border-radius: 40px;
   transition-duration: .5s;
 }
-
 .cart-btn:hover .addcart-text {
   transform: translate(10px,0px);
   transition-duration: .5s;
 }
-
 .cart-btn:active {
   transform: scale(0.95);
   transition-duration: .5s;
 }
+
 
 /* Este es el aside */
 .main-shop-aside {
@@ -243,9 +257,7 @@
   color: rgb(255, 255, 255);
   background-image: linear-gradient(147deg, #00ff80 0%, #33ff00 74%);
   font-weight: bold;
-
 }
-
 /* Las estrellas */
 .days-btn-container {
   display: flex;
@@ -257,12 +269,12 @@
   display: none;
 }
 .days-btn-container label {
-  background-image: linear-gradient(147deg, #00ff62 0%, #7bff00 74%);
+  background-image: linear-gradient(147deg, #5803e9 0%, #a600ff 74%);
+  /* background-image: linear-gradient(147deg, #00ff62 0%, #7bff00 74%); */
   font-size: 0.8rem;
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;
-  border: 2px solid #00ff11;
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
@@ -272,7 +284,13 @@
 }
 .day-btn:checked + .day-label2 {
   background-color: #9d00ff;
-  background-image: linear-gradient(147deg, #5803e9 0%, #a600ff 74%);
+  /* background-image: linear-gradient(147deg, #5803e9 0%, #a600ff 74%); */
+  background-image: linear-gradient(147deg, #00ff62 0%, #7bff00 74%);
   border: none;
   color: white;
 }
+
+/* hover feo 
+.articleshop-maincards:hover{
+  background-color: rgb(153, 0, 255, 0.9);
+} */
