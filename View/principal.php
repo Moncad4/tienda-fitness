@@ -148,6 +148,7 @@
   <?php
   require './footer/footer.php'
   ?>
+  <script src="./js/carrito-compra.js"></script>
   <script src="./js/inicio.js"></script>
 </body>
 </html>
