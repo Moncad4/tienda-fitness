@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url("../img/1.jpg");
+    background: url("../img/portada-sesion.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -56,7 +56,7 @@ body{
     margin: 0 25px;
 }
 
-.link:hover, .active{
+.link:hover{
     border-bottom: 2px solid #fff;
 }
 
