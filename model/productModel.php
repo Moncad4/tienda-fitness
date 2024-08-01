@@ -1,14 +1,14 @@
 <?php
 require_once(__DIR__.'/../DataBase/DB.php');
 
-class UserModelReg{
+class ProductModelRegister{
   private $db;
 
   public function __construct(){
       $this->db = new Database();
   }
 
-  public function SignUpUser($Nick, $last, $email, $pass){
+  public function productRegister($tittle, $description, $price, $img){
       $conn =  $this->db->getConnection();
       if (!$conn){
           die("Error de conexión a la base de datos: ");
@@ -16,7 +16,7 @@ class UserModelReg{
 
       $sql = "INSERT INTO product (tittle, description, price, image) VALUES (?,?,?,?)";
       $stmt = $conn->prepare($sql);
-      $stmt->bind_param("ssss", $Nick, $last, $email, $pass);
+      $stmt->bind_param("ssss", $tittle, $description, $price, $img);
 
       $result = $stmt->execute();
       $stmt->close();
