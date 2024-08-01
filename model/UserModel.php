@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__.'/../database/DB.php');
+require_once(__DIR__.'/../database/DB-login.php');
 
 class UserModelReg{
   private $db;
