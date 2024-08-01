@@ -128,7 +128,7 @@
               </div> 
             </div>
             <div class="articleshop-maincards artmaincard4">
-              <img class="products-shop" src="../img/tienda/product1.jpeg" alt="">
+              <img class="products-shop" src="../img/tienda/suplemento4.PNG" alt="">
               <div class="product-information">
                 <button class="cart-btn">
                   <span class="icon-container"> 
@@ -144,7 +144,7 @@
               </div>
             </div>
             <div class="articleshop-maincards artmaincard5">
-              <img class="products-shop" src="../img/tienda/product1.jpeg" alt="">
+              <img class="products-shop" src="../img/tienda/product5.jpeg" alt="">
               <div class="product-information">
                   <button class="cart-btn">
                     <span class="icon-container"> 
@@ -160,7 +160,7 @@
                 </div>
               </div>
             <div class="articleshop-maincards artmaincard6">
-              <img class="products-shop" src="../img/tienda/product1.jpeg" alt="">
+              <img class="products-shop" src="../img/tienda/product6.jpeg" alt="">
               <div class="product-information">
                 <button class="cart-btn">
                   <span class="icon-container"> 
@@ -176,7 +176,7 @@
               </div>
             </div>
             <div class="articleshop-maincards artmaincard7">
-              <img class="products-shop" src="../img/tienda/product1.jpeg" alt="">
+              <img class="products-shop" src="../img/tienda/product7.jpg" alt="">
               <div class="product-information">
                 <button class="cart-btn">
                   <span class="icon-container"> 
@@ -192,7 +192,7 @@
               </div>
             </div>
             <div class="articleshop-maincards artmaincard8">
-              <img class="products-shop" src="../img/tienda/product1.jpeg" alt="">
+              <img class="products-shop" src="../img/tienda/product8.jpeg" alt="">
               <div class="product-information">
                 <button class="cart-btn">
                   <span class="icon-container"> 
@@ -208,7 +208,7 @@
               </div>
             </div>
             <div class="articleshop-maincards artmaincard9">
-              <img class="products-shop" src="../img/tienda/product1.jpeg" alt="">
+              <img class="products-shop" src="../img/tienda/product9.jpeg" alt="">
               <div class="product-information">
                 <button class="cart-btn">
                   <span class="icon-container"> 
