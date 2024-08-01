@@ -16,10 +16,10 @@
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="../principal.php" class="link active">Inicio</a></li>
-                <li><a href="#" class="link">Tienda</a></li>
+                <li><a href="../principal.php" class="link">Inicio</a></li>
+                <li><a href="./tienda.php" class="link">Tienda</a></li>
                 <li><a href="#" class="link">Nosotros</a></li>
-                <li><a href="#" class="link">Ayudas</a></li>
+                <li><a href="./ayudas.php" class="link">Ayudas</a></li>
                 <li><a href="#" class="link">Contactos</a></li>
             </ul>
         </div>
