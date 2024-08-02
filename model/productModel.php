@@ -8,13 +8,13 @@ class ProductModelRegister{
       $this->db = new Database();
   }
 
-  public function productRegister($tittle, $description, $price, $img){
+  public function productRegister($tittle, $description, $price, $img, $discount, $priceDiscount){
       $conn =  $this->db->getConnection();
       if (!$conn){
           die("Error de conexión a la base de datos: ");
       }
 
-      $sql = "INSERT INTO product (tittle, description, price, image) VALUES (?,?,?,?)";
+      $sql = "INSERT INTO product (tittle, description, price, image, discount, price-discount) VALUES (?,?,?,?)";
       $stmt = $conn->prepare($sql);
       $stmt->bind_param("ssss", $tittle, $description, $price, $img);
 
