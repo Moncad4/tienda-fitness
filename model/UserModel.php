@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__.'/../database/DB-login.php');
+require_once(__DIR__.'/../database/DB.php');
 
 class UserModelReg{
   private $db;
@@ -49,6 +49,17 @@ class UserModelLogIn{
     }
     $stmt->close();
     $conn->close();
+  }
+}
+
+// user_information
+class userModel{
+  public function getUserById($user_id){
+    $db = new Database();
+    $conn = $db->getConnection();
+    $sql = "SELECT * FROM users WHERE id = $user_id";
+    $result = $conn->query($sql);
+    return $result->fetch_assoc();
   }
 }
 ?>

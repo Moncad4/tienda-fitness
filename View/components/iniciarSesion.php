@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/iniciarSesion.css">
-    <title>Ludiflex | Login & Registration</title>
+    <title>Login & Register</title>
 </head>
 <body>
 <div class="wrapper">
@@ -37,7 +37,7 @@
         
         <!------------------- login form -------------------------->
         <div class="login-container" id="login">
-        <form action="../index.php" method="post" enctype="multipart/form-data">
+        <form action="../../index.php" method="post" enctype="multipart/form-data">
                 <div class="top">
                     <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
                     <header>Login</header>
@@ -51,7 +51,8 @@
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <input type="submit" class="submit" value="Sign In" name="accionLogIn">
+                  <input type="hidden" name="accion" value="Iniciar_Sesion">
+                  <input type="submit" class="submit" value="Iniciar Sesion">
                 </div>
                 <div class="two-col">
                     <div class="one">
@@ -66,7 +67,7 @@
         </div>
         <!------------------- registration form -------------------------->
         <div class="register-container" id="register">
-        <form action="../index.php" method = "post" enctype = "multipart/form-data">
+        <form action="../../index.php" method = "post" enctype = "multipart/form-data">
             
                 <div class="top">
                     <span>Have an account? <a href="#" onclick="login()">Login</a></span>

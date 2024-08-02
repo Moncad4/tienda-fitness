@@ -1,5 +1,6 @@
 <?php
-require_once(__DIR__.'/../Model/UserModel.php');
+session_start();
+require_once(__DIR__.'/../model/UserModel.php');
 
 class UsersControllerReg{
   public function Registro(){
@@ -38,22 +39,32 @@ class LogInController{
       if($user){
         //Inicio exitoso
         $_SESSION['email_usuario'] = $user['Email'];
-        $_SESSION['contraseña_usuario'] = $user['Passwords'];
-        $rol = $user['Rol'];
-        if($rol === 'Administrador'){
-            header('Location: View/principal.php');
-            exit;
-        }else{
-            echo '<script>alert("No se encontro el Usuario");</script>';
-            header('Location: View/components/iniciarSesion.php');
-            exit;
-        }
-        
-    }else{
+        $_SESSION['nombre_usuario'] = $user['NickName'];
+        header('location: View/components/perfil.php');
+        exit;
+      }else{
         echo '<script>alert("CREDENCIALES INCORRECTAS");</script>';
+        header('location: View/components/iniciarSesion.php');
+        exit;
       }
     } 
   }
 }
-?>
+
+// user_information
+class perfilInformation{
+  public function showProfile(){
+    if(session_status() == PHP_SESSION_NONE){
+      session_start();
+    }if(isset($_SESSION['id'])){
+      $user_id = $_SESSION['id'];
+      $userModel = new userModel();
+      $usuario = $userModel->getUserById($user_id);
+      return $usuario;
+    }else{
+      header('location: ../../View/components/perfil.php');
+      exit();
+    }
+  }
+}
 ?>

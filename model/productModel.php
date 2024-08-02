@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__.'/../DataBase/DB.php');
+require_once(__DIR__.'/../database/DB.php');
 
 class ProductModelRegister{
   private $db;
