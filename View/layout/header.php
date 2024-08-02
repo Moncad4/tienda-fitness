@@ -1,5 +1,8 @@
 <?php
 define('BASE_URL', 'http://localhost/tienda-fitness/');
+// require_once('../../controller/UserController.php');
+// $perfil = new perfilInformation();
+// $userPerfil = $perfil->showProfile();
 ?>
 
 <body class="">
@@ -23,7 +26,11 @@ define('BASE_URL', 'http://localhost/tienda-fitness/');
                   <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                   <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                 </svg>
-                <span>Iniciar Sesion</span>
+                <?php if(!empty($userPerfil)){ ?>
+                <span><?php echo htmlspecialchars($userPerfil['NickName']); ?></span>
+                <?php } else { ?>
+                  <span>Iniciar Sesion</span>
+                <?php } ?>
               </a>
             </li>
             <li class="carrito-compras">

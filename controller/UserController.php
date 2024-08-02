@@ -38,8 +38,9 @@ class LogInController{
 
       if($user){
         //Inicio exitoso
-        $_SESSION['email_usuario'] = $user['Email'];
-        $_SESSION['nombre_usuario'] = $user['NickName'];
+        $_SESSION['id_usuario'] = $user['id'];
+        // $_SESSION['email_usuario'] = $user['Email'];
+        // $_SESSION['nombre_usuario'] = $user['NickName'];
         header('location: View/components/perfil.php');
         exit;
       }else{
@@ -56,14 +57,15 @@ class perfilInformation{
   public function showProfile(){
     if(session_status() == PHP_SESSION_NONE){
       session_start();
-    }if(isset($_SESSION['id'])){
-      $user_id = $_SESSION['id'];
+    }if(isset($_SESSION['id_usuario'])){
+      $user_id = $_SESSION['id_usuario'];
       $userModel = new userModel();
       $usuario = $userModel->getUserById($user_id);
       return $usuario;
     }else{
-      header('location: ../../View/components/perfil.php');
-      exit();
+      error_log("Redireccionando a iniciarSesion.php porque no se encontró la sesión ID");
+      header('Location: ../../View/components/iniciarSesion.php');
+      exit;
     }
   }
 }
