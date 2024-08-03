@@ -62,4 +62,33 @@ class userModel{
     return $result->fetch_assoc();
   }
 }
+
+// Login administrator modal
+class UserModelLogInAdm{
+  private $db;
+
+  public function __construct(){
+    $this->db = new Database();
+}
+
+  public function VerificarCredencialesAdm($emailAdm, $passAdm){
+    $conn = $this->db->getConnection();
+    $sql = "SELECT * FROM users WHERE Email = ? AND Passwords = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $emailAdm, $passAdm);
+    $result = $stmt->execute();
+
+    $result = $stmt->get_result();
+    $userAdm = $result->fetch_assoc();
+
+    $stmt->close();
+    $conn->close();
+
+    if ($userAdm){
+      return $userAdm;
+    }else{
+      return false;
+    }
+  }
+}
 ?>

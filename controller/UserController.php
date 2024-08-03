@@ -69,4 +69,27 @@ class perfilInformation{
     }
   }
 }
+
+// Login administrator controller
+class LogInAdmController{
+  public function LogInAdm(){
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+      $emailAdm = $_POST['Email'];
+      $passAdm = $_POST['Passwords'];
+
+      // Validar las credenciales
+      $userModelAdm = new UserModelLogInAdm();
+      $userAdm = $userModelAdm->VerificarCredencialesAdm($emailAdm, $passAdm);
+      
+      if($userAdm){
+        header('location: View/components/subComponents-logad/registerproduct.php');
+        exit;
+      }else{
+        echo '<script>alert("CREDENCIALES INCORRECTAS");</script>';
+        header('location: View/components/subComponents-logad/logad.php');
+        exit;
+      }
+    } 
+  }
+}
 ?>
