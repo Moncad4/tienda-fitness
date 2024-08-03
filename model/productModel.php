@@ -1,22 +1,22 @@
 <?php
 require_once(__DIR__.'/../database/DB.php');
 
-class ProductModelRegister{
+class ProductModelReg{
   private $db;
 
   public function __construct(){
       $this->db = new Database();
   }
 
-  public function productRegister($tittle, $description, $price, $img, $discount, $priceDiscount){
+  public function SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct){
       $conn =  $this->db->getConnection();
       if (!$conn){
           die("Error de conexión a la base de datos: ");
       }
 
-      $sql = "INSERT INTO product (tittle, description, price, image, discount, price-discount) VALUES (?,?,?,?)";
+      $sql = "INSERT INTO product (tittle, description, price, image, discount, priceDiscount) VALUES (?,?,?,?,?,?)";
       $stmt = $conn->prepare($sql);
-      $stmt->bind_param("ssss", $tittle, $description, $price, $img);
+      $stmt->bind_param("ssisii", $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct);
 
       $result = $stmt->execute();
       $stmt->close();
