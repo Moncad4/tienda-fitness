@@ -7,11 +7,9 @@
 </head>
 <body>
   <form action="">
-    <h2>pruduto</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laborum vel provident facere
-      deleniti ipsam, consequatur nulla corporis molestias voluptatibus impedit veritatis iusto magni 
-      recusandae. Veritatis, magni maxime! Maiores, quo.</p>
-      
+    <input type="text" name="" placeholder="Nombre del producto">
+    <input type="text" name="" placeholder="Descripcion">
+    <input type="text">
   </form>
 </body>
 </html>

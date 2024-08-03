@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-08-2024 a las 05:28:21
+-- Tiempo de generación: 03-08-2024 a las 02:02:55
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -28,11 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `product` (
-  `id` int(50) NOT NULL,
+  `product_id` int(50) NOT NULL,
   `tittle` varchar(100) NOT NULL,
   `description` varchar(500) NOT NULL,
-  `price` int(25) NOT NULL,
-  `image` varchar(30) NOT NULL
+  `price` int(15) NOT NULL,
+  `image` longblob NOT NULL,
+  `discount` int(3) NOT NULL,
+  `price-discount` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -42,12 +44,19 @@ CREATE TABLE `product` (
 --
 
 CREATE TABLE `users` (
-  `id` int(50) NOT NULL,
-  `NickName` int(100) NOT NULL,
-  `LastName` int(100) NOT NULL,
-  `Email` int(100) NOT NULL,
-  `Passwords` int(20) NOT NULL
+  `id` int(100) NOT NULL,
+  `NickName` varchar(100) NOT NULL,
+  `LastName` varchar(100) NOT NULL,
+  `Email` varchar(80) NOT NULL,
+  `Passwords` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `NickName`, `LastName`, `Email`, `Passwords`) VALUES
+(4, 'Juan David', 'Moncada Guzman', 'juandavidmoncada7@gmail.com', 'esclavos');
 
 --
 -- Índices para tablas volcadas
@@ -57,7 +66,7 @@ CREATE TABLE `users` (
 -- Indices de la tabla `product`
 --
 ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`product_id`);
 
 --
 -- Indices de la tabla `users`
@@ -73,13 +82,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
