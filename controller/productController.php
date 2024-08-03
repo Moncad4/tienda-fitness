@@ -8,16 +8,16 @@ class ProductControllerReg{
           $nameProduct = $_POST['product'];
           $descriptionProduct = $_POST['description'];
           $priceProduct = $_POST['price'];
-          $imageProduct = $_POST['image'];
+          // $imageProduct = $_POST['image'];
           $discountProduct = $_POST['discount'];
           $priceDiscountProduct = $_POST['priceDiscount'];
 
-          $user = new ProductModelReg();
-          $registroP =  $user->SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct);
+          $userP = new ProductModelReg();
+          $registroP =  $userP->SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $discountProduct, $priceDiscountProduct);
 
           if($registroP){
-              echo '<script>alert("REGISTRO EXITOSO");
-                  window.location.href = View/components/subComponents-tienda/registerproduct.php";
+            echo '<script>alert("REGISTRO EXITOSO");
+                  window.location.href = "View/components/subComponents-tienda/registerproduct.php";
               </script>';
               exit;
           }

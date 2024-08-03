@@ -11,14 +11,23 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
           $logincontroller = new LogInController();
           $logincontroller->LogIn();
         }
-    if(isset($_POST['accionProduct']) && $_POST['accionProduct'] === 'RegisterProduct'){
-      $productController = new ProductControllerReg();
-      $productController->RegistroProduct();
-    }
+    // if(isset($_POST['accionProduct']) === 'RegisterProduct'){
+    //   $productController = new ProductControllerReg();
+    //   $productController->RegistroProduct();
+    // }
     if (isset($_POST['accionAdm']) && $_POST['accionAdm'] === 'Iniciar_SesionAdm'){
       $admcontroller = new LogInAdmController();
       $admcontroller->LogInAdm();
     } 
   }
 }
+
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+  if(isset($_POST['accionProduct'])){
+      if($_POST['accionProduct'] === 'RegisterProduct'){
+        $productcontroller = new ProductControllerReg();
+        $productcontroller->RegistroProduct();
+      }
+    }
+  }
 ?>

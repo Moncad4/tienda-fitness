@@ -8,15 +8,15 @@ class ProductModelReg{
       $this->db = new Database();
   }
 
-  public function SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct){
+  public function SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $discountProduct, $priceDiscountProduct){
       $conn =  $this->db->getConnection();
       if (!$conn){
           die("Error de conexión a la base de datos: ");
       }
 
-      $sql = "INSERT INTO product (tittle, description, price, image, discount, priceDiscount) VALUES (?,?,?,?,?,?)";
+      $sql = "INSERT INTO product (tittle, description, price, discount, priceDiscount) VALUES (?,?,?,?,?)";
       $stmt = $conn->prepare($sql);
-      $stmt->bind_param("ssisii", $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct);
+      $stmt->bind_param("ssiii", $nameProduct, $descriptionProduct, $priceProduct, $discountProduct, $priceDiscountProduct);
 
       $result = $stmt->execute();
       $stmt->close();
