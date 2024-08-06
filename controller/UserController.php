@@ -82,11 +82,11 @@ class LogInAdmController{
       $userAdm = $userModelAdm->VerificarCredencialesAdm($emailAdm, $passAdm);
       
       if($userAdm){
-        header('location: View/components/subComponents-logad/registerproduct.php');
+        header('location: View/components/subComponents-tienda/registerproduct.php');
         exit;
       }else{
         echo '<script>alert("CREDENCIALES INCORRECTAS");</script>';
-        header('location: View/components/subComponents-logad/logad.php');
+        header('location: View/components/subComponents-tienda/logad.php');
         exit;
       }
     } 

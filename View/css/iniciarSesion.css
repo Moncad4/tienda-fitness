@@ -13,6 +13,22 @@ body{
     overflow: hidden;
 }
 
+.bgadm{
+  background: url("../img/bgregisterproduct.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.bglogin{
+  background: url("../img/loginadm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
 .wrapper{
     display: flex;
     justify-content: center;
