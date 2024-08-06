@@ -70,6 +70,21 @@ class perfilInformation{
   }
 }
 
+class headerInformation{
+  public function showProfileHeader(){
+    if(session_status() == PHP_SESSION_NONE){
+      session_start();
+    }if(isset($_SESSION['id_usuario'])){
+      $user_id = $_SESSION['id_usuario'];
+      $userModel = new userModel();
+      $usuario = $userModel->getUserById($user_id);
+      return $usuario;
+    }else{
+      error_log("Redireccionando a iniciarSesion.php porque no se encontró la sesión ID");
+    }
+  }
+}
+
 // Login administrator controller
 class LogInAdmController{
   public function LogInAdm(){

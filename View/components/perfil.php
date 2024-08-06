@@ -15,4 +15,5 @@
   echo $userPerfil['NickName'];
   ?>
 </body>
+<br><br><br><br><br><p><a href="../components/cerrarSesion.php">Cerrar Sesion</a></p>
 </html>
