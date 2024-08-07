@@ -75,11 +75,9 @@ a{
 }
 
 .inicio-sesion svg{
-  position: absolute;
-  left: 80%;
   width: 30px;
   height: 30px;
-  margin-right: 8px;
+  margin-right: 2px;
 }
 
 .inicio-sesion a{
@@ -117,9 +115,9 @@ a{
   display: none;
   position: absolute;
   top: 78%;
-  left: 79.5%;
+  left: 80%;
   background-color: aliceblue;
-  width: 10vw;
+  width: 8rem;
   height: 10.5vh;
 }
 
