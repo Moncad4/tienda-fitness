@@ -89,7 +89,6 @@ a{
 }
 
 /* menu  de inicio sesion */
-
 .menu-inicioSesion li:hover ul {
   display: block;
 }
@@ -214,13 +213,9 @@ a{
 
 .imagen-inicio{
   width: 50%;
-  height: 33.5rem;
+  height: 97.2vh;
   display: flex;
   justify-content: center;
-}
-
-.imagen-inicio img{
-  height: 37.5rem;
 }
 
 /* seccion productos */
