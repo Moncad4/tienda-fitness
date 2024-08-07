@@ -20,17 +20,22 @@ $userPerfil = $perfil->showProfileHeader();
             <li><a href="#">Contacto</a></li>
             <li class="inicio-sesion">
                 <?php if(isset($userPerfil)){ ?>
-                <span class="">
-                  <a href="<?php echo BASE_URL; ?>View/components/perfil.php">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <ul class="menu-inicioSesion">
+                  <li>
+                  <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                       <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                       <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                       <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                    </svg>
-                    <?php echo htmlspecialchars($userPerfil['NickName']); ?>
+                    </svg>Cuenta&#11167;
                   </a>
-                </span>
+                  <ul>
+                    <li><a href="<?php echo BASE_URL; ?>View/components/perfil.php">Perfil</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>View/components/cerrarSesion.php">Cerrar sesion</a></li>
+                  </ul>
+                  </li>
+                </ul>
                 <?php } else { ?>
                   <a href="<?php echo BASE_URL; ?>View/components/iniciarSesion.php">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">

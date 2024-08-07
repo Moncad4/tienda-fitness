@@ -6,6 +6,10 @@
   font-family: sans-serif;
 }
 
+li{
+  list-style: none;
+}
+
 a{
   text-decoration: none;
 }
@@ -71,7 +75,8 @@ a{
 }
 
 .inicio-sesion svg{
-  background-color: aliceblue;
+  position: absolute;
+  left: 80%;
   width: 30px;
   height: 30px;
   margin-right: 8px;
@@ -83,8 +88,25 @@ a{
   align-items: center;
 }
 
-/* menu hamburguesa de inicio sesion */
+/* menu  de inicio sesion */
 
+.menu-inicioSesion li:hover ul {
+  display: block;
+}
+
+.menu-inicioSesion ul{
+  display: none;
+  position: absolute;
+  top: 78%;
+  left: 79.5%;
+  background-color: aliceblue;
+  width: 10vw;
+  height: 10.5vh;
+}
+
+.menu-inicioSesion ul li{
+  margin-top: 6px;
+}
 
 /* carrito de compras */
 .carrito-compras .icon-cart{
@@ -123,6 +145,7 @@ a{
   inset: 0 0 0 auto;
 }
 
+/* esto hace que se mueva la carta del carrito */
 .showCart .container-header{
   transform: translateX(-280px);
 }

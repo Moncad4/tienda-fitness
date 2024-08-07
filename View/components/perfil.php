@@ -12,7 +12,7 @@
   require_once('../../controller/UserController.php');
   $perfil = new perfilInformation();
   $userPerfil = $perfil->showProfile();
-  echo $userPerfil['NickName'];
+  // echo $userPerfil['NickName'];
   ?>
 </body>
 <br><br><br><br><br><p><a href="../components/cerrarSesion.php">Cerrar Sesion</a></p>

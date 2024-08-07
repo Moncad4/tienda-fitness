@@ -41,7 +41,7 @@ class LogInController{
         $_SESSION['id_usuario'] = $user['id'];
         // $_SESSION['email_usuario'] = $user['Email'];
         // $_SESSION['nombre_usuario'] = $user['NickName'];
-        header('location: View/components/perfil.php');
+        header('location: View/principal.php');
         exit;
       }else{
         echo '<script>alert("CREDENCIALES INCORRECTAS");</script>';
