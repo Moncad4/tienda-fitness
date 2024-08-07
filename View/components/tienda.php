@@ -90,9 +90,17 @@
                     Add to Cart
                   </p>
                 </button>   
-                <p class="addcart-text addcart-textindi">
-                    Detalles...
-                </p>  
+                  <ul class="hover-product">
+                    <li>
+                    <p class="addcart-text addcart-textindi">Detalles...</span> </p> 
+                      <ul> 
+                        <div class="hover-product">puto el quue lo lea
+                        <img class="products-shop" src="../img/tienda/product2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aspernatur officia aliquid doloribus voluptas, totam laboriosam nobis, quas ipsa incidunt voluptatum placeat obcaecati tempore quis perferendis. Quae sunt facere voluptatum?</p>
+                        </div>
+                      </ul>
+                    </li>
+                  </ul>
               </div>
             </div>
             <div class="articleshop-maincards artmaincard2">
@@ -106,9 +114,17 @@
                     Add to Cart
                   </p>
                 </button>  
-                <p class="addcart-text addcart-textindi">
-                    Detalles...
-                </p>   
+                <ul class="hover-product">
+                    <li>
+                    <p class="addcart-text addcart-textindi">Detalles...</span> </p> 
+                      <ul> 
+                        <div class="hover-product">puto el quue lo lea
+                        <img class="products-shop" src="../img/tienda/product2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aspernatur officia aliquid doloribus voluptas, totam laboriosam nobis, quas ipsa incidunt voluptatum placeat obcaecati tempore quis perferendis. Quae sunt facere voluptatum?</p>
+                        </div>
+                      </ul>
+                    </li>
+                  </ul>  
               </div> 
             </div>
             <div class="articleshop-maincards artmaincard3">
@@ -122,9 +138,17 @@
                     Add to Cart
                   </p>
                 </button> 
-                <p class="addcart-text addcart-textindi">
-                    Detalles...
-                </p>    
+                <ul class="hover-product">
+                    <li>
+                    <p class="addcart-text addcart-textindi">Detalles...</span> </p> 
+                      <ul> 
+                        <div class="hover-product">puto el quue lo lea
+                        <img class="products-shop" src="../img/tienda/product2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aspernatur officia aliquid doloribus voluptas, totam laboriosam nobis, quas ipsa incidunt voluptatum placeat obcaecati tempore quis perferendis. Quae sunt facere voluptatum?</p>
+                        </div>
+                      </ul>
+                    </li>
+                  </ul>  
               </div> 
             </div>
             <div class="articleshop-maincards artmaincard4">

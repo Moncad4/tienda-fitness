@@ -27,4 +27,12 @@ class ProductControllerReg{
       }
   }
 }
+
+// class consultingInfo{
+//   public function RegistroProduct(){
+
+ 
+ 
+//   }
+// }
 ?>
