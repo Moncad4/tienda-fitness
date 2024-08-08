@@ -24,4 +24,30 @@ class ProductModelReg{
       return $result;
   }
 }
+
+// class ProductModelRender {
+//   private $db;
+
+//   public function __construct(){
+//     $this->db = new Database();
+//   }
+
+//   public function getAllProducts() {
+//       $conn = $this->db->getConnection();
+//       $sql = "SELECT * FROM product";
+//       $stmt = $conn->prepare($sql);
+//       $stmt->bind_param("ss", $emailAdm, $passAdm);
+//       $result = $stmt->execute();
+//       $result = $stmt->get_result();
+//       $productos = $result->fetch_assoc();
+
+//       $productos = [];
+
+//       while ($row = $result->fetch_assoc()) {
+//           $productos[$row['id']] = $row; // Usa el ID como clave
+//       }
+
+//       return $productos;
+//   }
+// }
 ?>
