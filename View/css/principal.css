@@ -24,7 +24,7 @@ a{
 }
 
 .container-header{
-  height: 4em;
+  height: 3.5em;
   width: 100%;
   background-color: rgb(60, 22, 95, 0.5);
   position: fixed;
@@ -116,7 +116,7 @@ a{
 .menu-inicioSesion ul{
   display: none;
   position: absolute;
-  top: 78%;
+  top: 90%;
   left: 80%;
   width: 8rem;
   height: 10.5vh;
@@ -139,7 +139,7 @@ a{
   color: white;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: -7.5px;
 }
 

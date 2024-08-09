@@ -146,7 +146,7 @@
   </section>
 
   <?php
-  require './footer/footer.php'
+  require './layout/footer.php'
   ?>
   
   <script src="./js/carrito-compra.js"></script>
