@@ -26,10 +26,11 @@ a{
 .container-header{
   height: 4em;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgb(60, 22, 95, 0.5);
   position: fixed;
   z-index: 998;
   transition: transform .5s;
+  box-shadow: #000;
 }
 
 .navegador{
@@ -98,7 +99,7 @@ a{
   background-color: rgb(255, 255, 255);
   width: 60vw;
   height: 87vh;
-  top: 45%;
+  top: 44%;
   left: 25%;
   z-index: 80;
 }
@@ -109,7 +110,7 @@ a{
 
 .menu-inicioSesion li:hover ul{
   display: block;
-  background-color: #c0afd6;
+  background-color: rgb(60, 22, 95, 0.5);
 }
 
 .menu-inicioSesion ul{
@@ -117,7 +118,6 @@ a{
   position: absolute;
   top: 78%;
   left: 80%;
-  background-color: aliceblue;
   width: 8rem;
   height: 10.5vh;
 }
@@ -125,14 +125,14 @@ a{
 /* carrito de compras */
 .carrito-compras .icon-cart{
   position: relative;
-  margin-right: 20px;
   cursor: pointer;
+  margin-right: 35px;
 }
 
 .carrito-compras .icon-cart span{
   display: flex;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   background-color: red;
   justify-content: center;
   align-items: center;
@@ -140,7 +140,7 @@ a{
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  right: -10px;
+  right: -7.5px;
 }
 
 .cartTab{
