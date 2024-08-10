@@ -1,6 +1,7 @@
 
 
 <link rel="stylesheet" href="../../css/iniciarSesion.css">
+<link rel="stylesheet" href="../../css/registerproduct.css">
 <body class="bgadm">
 <div>
 <nav class="nav-dashboard">
@@ -31,7 +32,7 @@
     </aside>
   </div>
   <div class="bgregistercontainer-admi">
-    <div class="register-containerAdm containderAdm-view" id="register">
+    <div class="register-containerAdm1 containderAdm-view" id="register">
       <form action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
         <div class="top">
             <header>Registrar productos</header>
