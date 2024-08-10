@@ -20,7 +20,15 @@ $userPerfil = $perfil->showProfile();
   <div class="titulo-perfil">
     <h1>Perfil</h1>
   </div>
+  
   <div class="container-perfil">
+    <div class="menu-perfil-container">
+      <ul>
+        <li><button class="boton-perfil">Perfil</button></li>
+        <li><button class="boton-pedidos">Pedidos</button></li>
+        <li><button class="boton-historial">Historial</button></li>
+      </ul>
+    </div>
     <div class="subContainer-perfil">
       <div class="perfil-content-izquierda">
         <img src="../img/pared-verde.jpeg" alt="">
@@ -55,7 +63,18 @@ $userPerfil = $perfil->showProfile();
           <span>Correo: <?php echo $userPerfil['Email']?></span>
         </h2>
       </div>
+    </div> 
+
+    <!-- pedidos -->
+    <div class="subContainer-perfil2">
+      <h2>pedidos vacios</h2>
     </div>
-</div>
+
+    <!-- historial -->
+    <div class="subContainer-perfil3">
+      <h2>historial vacio</h2>
+    </div>
+  </div>
+  <script src="../js/perfil.js"></script>
 </body>
 </html>
