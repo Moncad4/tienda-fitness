@@ -13,22 +13,6 @@ body{
     overflow: hidden;
 }
 
-.bgadm{
-  background: url("../img/bgregisterproduct.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
-.bglogin{
-  background: url("../img/loginadm.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
 .wrapper{
     display: flex;
     justify-content: center;
@@ -312,4 +296,74 @@ header{
         flex-direction: column;
         gap: 0;
     }
+}
+
+/* Dashboard */
+.bgadm{
+  background-color: aliceblue;
+}
+
+.nav-dashboard{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(228, 228, 228);
+  width: 100vw;
+  height: 9vh;
+  padding: 0.5rem;
+}
+
+.dashboard-admin{
+  display: flex;
+  background-color: aliceblue;
+  height: 100%;
+  width: 100%;
+}
+
+.divdashboard-left{
+  display: flex;
+  /* background-color: black; */
+}
+
+.leftnav{
+  background-color: aliceblue;
+  height: 100%;
+}
+
+.uldadboard-left{
+  height: 30vh;
+  width: 15vw;
+  padding: 0.5rem;
+}
+
+.leftnavaside{
+  padding: 0.2rem;
+}
+
+.bgregistercontainer-admi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chartreuse;
+  height: 100vh;
+  width: 100vw;
+}
+
+.containderAdm-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 90%;
+  background-color: aquamarine;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Login dashboard */
+.bglogin{
+  background: url("../img/loginadm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
 }
