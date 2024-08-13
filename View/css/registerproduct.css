@@ -89,7 +89,7 @@ aside ul{
 }
 
 .dbprincipal-gridtop{
-  display: grid;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
   gap: 0rem 1rem;
@@ -105,7 +105,7 @@ aside ul{
 }
 
 .dbprincipal-gridbottom {
-  display: grid;
+  display: none;
   grid-template-columns: 3fr 1fr;
   margin: 1.2rem;
   gap: 1rem;
@@ -122,7 +122,7 @@ aside ul{
 /* Editar agregar y eliminar productos aqui */
 /* Todo esto esta oculto porque hay que configurarlo con JS */
 .dashbardpresentacion{
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: rgba(253, 0, 0);
   height: 100%;

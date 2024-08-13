@@ -8,15 +8,18 @@ class ProductModelReg{
       $this->db = new Database();
   }
 
-  public function SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $discountProduct, $priceDiscountProduct){
+  public function SignUpProduct($nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct){
       $conn =  $this->db->getConnection();
       if (!$conn){
           die("Error de conexión a la base de datos: ");
       }
 
-      $sql = "INSERT INTO product (tittle, description, price, discount, priceDiscount) VALUES (?,?,?,?,?)";
+      $sql = "INSERT INTO product (tittle, description, price, image, discount, priceDiscount) VALUES (?,?,?,?,?, ?)";
       $stmt = $conn->prepare($sql);
-      $stmt->bind_param("ssiii", $nameProduct, $descriptionProduct, $priceProduct, $discountProduct, $priceDiscountProduct);
+      if(is_array($imageProduct)){
+        $imageProduct = implode(",", $imageProduct);
+      }
+      $stmt->bind_param("ssisii", $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct);
 
       $result = $stmt->execute();
       $stmt->close();
@@ -25,29 +28,17 @@ class ProductModelReg{
   }
 }
 
-// class ProductModelRender {
-//   private $db;
-
-//   public function __construct(){
-//     $this->db = new Database();
-//   }
-
-//   public function getAllProducts() {
-//       $conn = $this->db->getConnection();
-//       $sql = "SELECT * FROM product";
-//       $stmt = $conn->prepare($sql);
-//       $stmt->bind_param("ss", $emailAdm, $passAdm);
-//       $result = $stmt->execute();
-//       $result = $stmt->get_result();
-//       $productos = $result->fetch_assoc();
-
-//       $productos = [];
-
-//       while ($row = $result->fetch_assoc()) {
-//           $productos[$row['id']] = $row; // Usa el ID como clave
-//       }
-
-//       return $productos;
-//   }
-// }
+class ProductoModel{
+  public function viewProductoModel($conn){
+    $db = new Database();
+    $conn = $db->getConnection();
+    $sql = "SELECT * FROM product";
+    $stmt = $conn->query($sql);
+    $vistaDelProducto = array();
+    while($row = $stmt->fetch_assoc()){
+      $vistaDelProducto[] = $row;
+    }
+    return $vistaDelProducto;
+  }
+}
 ?>
