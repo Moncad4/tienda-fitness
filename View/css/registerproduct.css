@@ -80,7 +80,7 @@ aside ul{
 }
 
 .dashboard-principal{
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: aliceblue;
   height: 100%;
@@ -89,7 +89,7 @@ aside ul{
 }
 
 .dbprincipal-gridtop{
-  display: none;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
   gap: 0rem 1rem;
@@ -105,7 +105,7 @@ aside ul{
 }
 
 .dbprincipal-gridbottom {
-  display: none;
+  display: grid;
   grid-template-columns: 3fr 1fr;
   margin: 1.2rem;
   gap: 1rem;

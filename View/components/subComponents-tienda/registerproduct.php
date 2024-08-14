@@ -23,15 +23,15 @@ $userPerfil = $perfil->showProfile();
     <aside class="leftnavasidecontainer">
       <ul class="uldadboard-left">
       <label for="">Discover</label>
-        <li class="leftnavaside">◘ 1</li>
+        <li><button class="leftnavaside principalProductoBoton">↨Principal</button></li>
         <li class="leftnavaside">♠ 2</li>
         <li class="leftnavaside">♦ 3</li>
       </ul>
       <ul class="uldadboard-left">
       <label for="">Tools</label>
-        <li class="leftnavaside">◙ Registrar</li>
-        <li class="leftnavaside">♀ Eliminar</li>
-        <li class="leftnavaside">► Modificar</li>
+        <li><button class="leftnavaside registerProductBoton">◙ Registrar</button></li>
+        <li><button href="" class="leftnavaside eliminarProductBoton">♀ Eliminar</button></li>
+        <li><button class="leftnavaside modificarProductBoton">► Modificar</button></li>
       </ul>
       <ul class="uldadboard-left">
         <label for="">Finance</label>
@@ -179,5 +179,6 @@ $userPerfil = $perfil->showProfile();
     </div>
   </div>
 </div>
+<script src="../../js/dashboard.js"></script>
 </body>
 

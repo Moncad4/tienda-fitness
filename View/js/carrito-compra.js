@@ -9,3 +9,51 @@ iconCart.addEventListener('click', () => {
 closeCarrito.addEventListener('click', () => {
   body.classList.toggle('showCart')
 })
+
+function agregarAlCarrito(product_id, tittle, price, discount, priceDiscount) {
+  let carrito = JSON.parse(localStorage.getItem('cartTab')) || [];
+  
+  let producto = {
+      product_id: product_id,
+      tittle: tittle,
+      price: price,
+      discount: discount,
+      priceDiscount: priceDiscount
+      // imagen: imagen
+  };
+  
+  carrito.push(producto);
+  localStorage.setItem('cartTab', JSON.stringify(carrito));
+  
+  actualizarCarrito();
+}
+
+function actualizarCarrito() {
+  let carrito = JSON.parse(localStorage.getItem('cartTab')) || [];
+  let carritoHTML = '';
+  
+  carrito.forEach((producto, index) => {
+      carritoHTML += `
+        
+        <div class="listcart">
+          <span>${producto.tittle}</span>
+          <span>$${producto.price}</span>
+          <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
+        </div>
+        
+      `;
+  });
+  
+  document.getElementById('cartTab').innerHTML = carritoHTML;
+}
+
+function eliminarDelCarrito(index) {
+  let carrito = JSON.parse(localStorage.getItem('cartTab')) || [];
+  carrito.splice(index, 1);
+  localStorage.setItem('cartTab', JSON.stringify(carrito));
+  actualizarCarrito();
+}
+
+window.onload = function() {
+  actualizarCarrito();
+};

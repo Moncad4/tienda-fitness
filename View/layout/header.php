@@ -49,6 +49,11 @@ $userPerfil = $perfil->showProfileHeader();
                   </a>
                 <?php } ?>
             </li>
+
+
+
+
+
             <li class="carrito-compras">
               <div class="icon-cart">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -66,14 +71,14 @@ $userPerfil = $perfil->showProfileHeader();
       </nav>
     </header>
     
-
     <div class="cartTab">
-      <h2>Carrito de compras</h2>
-      <div class="listcart">1</div>
-      <div class="btn-carrito">
-        <button class="close-carrito">Close</button>
-        <button class="checkout-carrito">Check Out</button>
-      </div>
+    <h2>Carrito de compras</h2>
+    <div id="cartTab"></div>
+    <div class="btn-carrito">
+      <button class="close-carrito">Close</button>
+      <button class="checkout-carrito">Check Out</button>
+    </div>
+
     </div>
   <script src="../js/carrito-compra.js"></script>
 </body>
