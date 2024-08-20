@@ -97,6 +97,7 @@ class LogInAdmController{
       $userAdm = $userModelAdm->VerificarCredencialesAdm($emailAdm, $passAdm);
       
       if($userAdm){
+        $_SESSION['id_usuario'] = $userAdm['id'];
         header('location: View/components/subComponents-tienda/registerproduct.php');
         exit;
       }else{

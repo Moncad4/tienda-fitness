@@ -1,22 +1,21 @@
 <link rel="stylesheet" href="../../css/iniciarSesion.css">
+<link rel="stylesheet" href="../../css/registerproduct.css">
 
 <body class="bglogin">
-  <div class="login-containerAdm " id="login">
-    <form action="../../../index.php" method="post" enctype="multipart/form-data">
+  <div class="login-containerAdm" id="login">
+    <form class="form-panelAdm" action="../../../index.php" method="post" enctype="multipart/form-data">
         <div class="top">
-          <header>Login</header>
+          <p class="title-PanelAdm" for="">Panel de Administrador</p>
         </div>
-        <div class="input-box">
+        <div class="inputAdm-box">
           <input required type="text" class="input-field" name="Email" placeholder="Email">
-          <i class="bx bx-user"></i>
         </div>
-        <div class="input-box">
+        <div class="inputAdm-box">
           <input required type="password" class="input-field" name="Passwords" placeholder="Password">
-          <i class="bx bx-lock-alt"></i>
         </div>
-        <div class="input-box">
-          <input type="hidden" name="accionAdm" value="Iniciar_SesionAdm">
-          <input type="submit" class="submit" value="Iniciar Sesion">
+        <div class="inputAdm-box">
+          <input type="hidden" name="accionAdm" value="SesionAdm">
+          <input type="submit" class="submit" value="SesionAdm">
         </div>
         <div class="two-col">
           <div class="two">

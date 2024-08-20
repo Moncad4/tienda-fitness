@@ -125,14 +125,14 @@
   <section class="seccion-ayudas">
     <h2>AYUDAS</h2>
     <div class="container-seccion-ayudas">
-      <div class="subContainer-img-ayudas">
-        <img src="./img/seccion-ayudas.gif" alt="">
-      </div>
       <div class="subContainer-descripcion-ayudas">
         <h3>Tipos de dietas</h3>
         <a href="#">Seleccionar</a>
         <h3>Quemadores de grasa</h3>
         <a href="#">Seleccionar</a>
+      </div>
+      <div class="subContainer-img-ayudas">
+        <img src="./img/seccion-ayudas.gif" alt="">
       </div>
     </div>
   </section>

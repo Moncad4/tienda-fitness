@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
   if (isset($_POST['accionAdm'])){
-    if ($_POST['accionAdm'] === 'Iniciar_SesionAdm'){
+    if ($_POST['accionAdm'] === 'SesionAdm'){
       $admcontroller = new LogInAdmController();
       $admcontroller->LogInAdm();
     } 

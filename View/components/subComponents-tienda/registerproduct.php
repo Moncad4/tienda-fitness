@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../../css/registerproduct.css">
 <?php
+define('BASE_URL', 'http://localhost/tienda-fitness/');
 require_once('../../../controller/UserController.php');
 $perfil = new perfilInformation();
 $userPerfil = $perfil->showProfile();
@@ -11,11 +12,10 @@ $userPerfil = $perfil->showProfile();
 <nav class="nav-dashboard">
   <div class="navdiv-img">
     <img src="../../img/entrenador.png" class="admilogo" alt="">
-    <span> <?php echo $userPerfil['NickName']?></span>
+    <span class="NameUserBanner"> <?php echo $userPerfil['NickName']?></span>
   </div> 
-  <div>
-
-  ♥ ◙  
+  <div class="navright-items">
+  ♥ <a href="<?php echo BASE_URL; ?>View/components/cerrarSesion.php">◙</a>  
   <div>
 </nav>
 <div class="dashboard-admin">
@@ -23,7 +23,7 @@ $userPerfil = $perfil->showProfile();
     <aside class="leftnavasidecontainer">
       <ul class="uldadboard-left">
       <label for="">Discover</label>
-        <li><button class="leftnavaside principalProductoBoton">↨Principal</button></li>
+        <li><button class="leftnavaside principalProductoBoton">♪ Principal</button></li>
         <li class="leftnavaside">♠ 2</li>
         <li class="leftnavaside">♦ 3</li>
       </ul>
@@ -43,53 +43,47 @@ $userPerfil = $perfil->showProfile();
   </div>
   <div class="dashboard-principal">
     <div class="dbprincipal-gridtop">
-      <div class="gridquarter"></div>
-      <div class="gridquarter"></div>
-      <div class="gridquarter"></div>
-      <div class="gridquarter"></div>
+      <div class="gridquarter">11</div>
+      <div class="gridquarter">22</div>
+      <div class="gridquarter">33</div>
+      <div class="gridquarter">44</div>
     </div>
     <div class="dbprincipal-gridbottom">
-      <div class="gripquarterbottom"></div>
-      <div class="gripquarterbottom"></div>
+      <div class="gripquarterbottom">55</div>
+      <div class="gripquarterbottom">66</div>
     </div>
   </div>
   <div class="dashbardpresentacion">
     <div class="bgregistercontainer-admi dashboardadministrator-add">
       <div class="register-containerAdm1 containderAdm-view" id="register">
-        <form action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
+        <form class="form-style" action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
           <div class="top">
-              <header>Registrar productos</header>
+            <label for="">Registrar productos</label>
           </div>
-          <div class="two-forms">
+          <div class="input-box">
               <div class="input-box">
                   <input type="text" class="input-field" placeholder="Nombre del producto" name="product" required>
-                  <i class="bx bx-user"></i>
               </div>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio del producto" name="price" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Descuento del producto" name="discount" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio y vista del descuento" name="priceDiscount" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <!-- imagen -->
           <div class="input-box">
               <input type="file" class="input-field" placeholder="Imagen" name="image1" required>
-              <i class="bx bx-lock-alt"></i>
             </div>
             <div class="input-box">
                 <textarea type="text" class="input-field" placeholder="Descripcion" name="description" required></textarea>
-                <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
                 <input type="hidden" name = "accionProduct" value = "RegisterProduct" >
-                <input type="submit" value="Register Product" class="submit">
+                <input type="submit" value="Registrar Producto" class="submit">
             </div>
         </form>
       </div>
@@ -97,40 +91,34 @@ $userPerfil = $perfil->showProfile();
 
     <div class="bgregistercontainer-admi dashboardadministrator-edict">
       <div class="register-containerAdm1 containderAdm-view" id="register">
-        <form action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
+      <form class="form-style" action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
           <div class="top">
-              <header>Registrar productos</header>
+            <label for="">Modificar productos</label>
           </div>
-          <div class="two-forms">
+          <div class="input-box">
               <div class="input-box">
                   <input type="text" class="input-field" placeholder="Nombre del producto" name="product" required>
-                  <i class="bx bx-user"></i>
               </div>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio del producto" name="price" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Descuento del producto" name="discount" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio y vista del descuento" name="priceDiscount" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <!-- imagen -->
-          <!-- <div class="input-box">
-              <input type="load" class="input-field" placeholder="Imagen" name="image" required>
-              <i class="bx bx-lock-alt"></i>
-            </div> -->
+          <div class="input-box">
+              <input type="file" class="input-field" placeholder="Imagen" name="image1" required>
+            </div>
             <div class="input-box">
                 <textarea type="text" class="input-field" placeholder="Descripcion" name="description" required></textarea>
-                <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
                 <input type="hidden" name = "accionProduct" value = "RegisterProduct" >
-                <input type="submit" value="Register Product" class="submit">
+                <input type="submit" value="Modificar Producto" class="submit">
             </div>
         </form>
       </div>
@@ -138,40 +126,34 @@ $userPerfil = $perfil->showProfile();
     
     <div class="bgregistercontainer-admi dashboardadministrator-delete">
       <div class="register-containerAdm1 containderAdm-view" id="register">
-        <form action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
+      <form class="form-style" action="../../../index.php" method = "post" enctype = "multipart/form-data"> 
           <div class="top">
-              <header>Registrar productos</header>
+            <label for="">Eliminar productos</label>
           </div>
-          <div class="two-forms">
+          <div class="input-box">
               <div class="input-box">
                   <input type="text" class="input-field" placeholder="Nombre del producto" name="product" required>
-                  <i class="bx bx-user"></i>
               </div>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio del producto" name="price" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Descuento del producto" name="discount" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio y vista del descuento" name="priceDiscount" required>
-              <i class="bx bx-envelope"></i>
           </div>
           <!-- imagen -->
-          <!-- <div class="input-box">
-              <input type="load" class="input-field" placeholder="Imagen" name="image" required>
-              <i class="bx bx-lock-alt"></i>
-            </div> -->
+          <div class="input-box">
+              <input type="file" class="input-field" placeholder="Imagen" name="image1" required>
+            </div>
             <div class="input-box">
                 <textarea type="text" class="input-field" placeholder="Descripcion" name="description" required></textarea>
-                <i class="bx bx-user"></i>
             </div>
             <div class="input-box">
                 <input type="hidden" name = "accionProduct" value = "RegisterProduct" >
-                <input type="submit" value="Register Product" class="submit">
+                <input type="submit" value="Eliminar Producto" class="submit">
             </div>
         </form>
         </div>
