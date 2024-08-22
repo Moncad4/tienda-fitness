@@ -29,6 +29,7 @@ $userPerfil = $perfil->showProfile();
         <li><button class="boton-historial">Historial</button></li>
       </ul>
     </div>
+    
     <div class="subContainer-perfil">
       <div class="perfil-content-izquierda">
         <img src="../img/pared-verde.jpeg" alt="">

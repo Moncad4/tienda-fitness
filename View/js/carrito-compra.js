@@ -10,6 +10,7 @@ closeCarrito.addEventListener('click', () => {
   body.classList.toggle('showCart')
 })
 
+// ver productos en el carrito
 function agregarAlCarrito(product_id, tittle, price, discount, priceDiscount) {
   let carrito = JSON.parse(localStorage.getItem('cartTab')) || [];
   
