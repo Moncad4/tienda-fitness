@@ -5,107 +5,121 @@
   font-family: sans-serif;
 }
 
-.body-perfil{
-  background-color: cadetblue;
-}
-
-.titulo-perfil{
-  width: 100%;
-  padding-top: 80px;
-  padding-bottom: 20px
-}
-
-.titulo-perfil h1{
-  margin-left: 135px;
-}
-
-.container-perfil{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-perfil-container ul li button{
+.container-sectionPerfil{
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-}
-
-.subContainer-perfil{
-  width: 80%;
-  height: 70vh;
-  display: flex;
   flex-direction: row;
-  border: 5px solid black;
 }
 
-.subContainer-perfil2{
-  width: 80%;
-  height: 70vh;
-  display: none;
-  flex-direction: row;
-  border: 5px solid violet;
-}
-
-.subContainer-perfil3{
-  width: 80%;
-  height: 70vh;
-  display: none;
-  flex-direction: row;
-  border: 5px solid rgb(104, 2, 104);
-}
-
-.subContainer-perfil2{
-  display: none;
-  background-color: aqua;
-}
-
-.subContainer-perfil3{
-  display: none;
-  background-color: brown;
-}
-
-.boton-pedidos button:focus .subContainer-perfil2{
-  display: block;
-}
-
-.perfil-content-izquierda{
+.subContainer-deailsPerfil{
   width: 40%;
-  height: 100%;
+}
+
+.picture-Perfil{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: blueviolet;
-  border-right: 5px solid black;
 }
 
-.perfil-content-izquierda img{
-  width: 200px;
-  height: 200px;
+.picture-Perfil img{
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  margin-top: 10PX;
-  border: 5px solid black;
 }
 
-.perfil-content-izquierda h2{
-  margin-top: 30px;
-  font-size: 35px;
+.picture-Perfil h4{
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
-.perfil-content-derecha{
+.container-buttonsPerfil{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* botones de cambios */
+.buttonPerfil {
+  position: relative;
+  width: 55%;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.buttonPerfil, .icon-buttonPerfil, .name-buttonPerfil {
+  transition: all 0.3s;
+}
+.name-buttonPerfil {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.icon-buttonPerfil {
+  position: absolute;
+  transform: translateX(16.2rem);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-buttonPerfil svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.buttonPerfil:hover {
+  background: #17795E;
+}
+
+.buttonPerfil:hover .name-buttonPerfil{
+  color: transparent;
+}
+
+.buttonPerfil:hover .icon-buttonPerfil {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.buttonPerfil:active .button__icon {
+  background-color: #146c54;
+}
+
+.buttonPerfil:active {
+  border: 1px solid #146c54;
+}
+
+/* contenedor de la informacion personal */
+.subContainer-informationPerfil{
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: aliceblue;
 }
 
-.perfil-content-derecha h2{
-  margin-bottom: 60px;
-  text-align: center;
+.information-nickName, .information-lastName{
+  margin-bottom: 40px;
 }
+
+.information-nickName h3, .information-lastName h3, .information-email h3{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.information-nickName span, .information-lastName span, .information-email span{
+  font-size: 30px;
+}
+
+
+
