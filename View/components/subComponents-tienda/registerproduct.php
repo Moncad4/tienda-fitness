@@ -65,22 +65,28 @@ $userPerfil = $perfil->showProfile();
                   <input type="text" class="input-field" placeholder="Nombre del producto" name="product" required>
               </div>
           </div>
+
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio del producto" name="price" required>
           </div>
+
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Descuento del producto" name="discount" required>
           </div>
+
           <div class="input-box">
               <input type="number" class="input-field" placeholder="Precio y vista del descuento" name="priceDiscount" required>
           </div>
+
           <!-- imagen -->
           <div class="input-box">
               <input type="file" class="input-field" placeholder="Imagen" name="image1" required>
             </div>
+
             <div class="input-box">
                 <textarea type="text" class="input-field" placeholder="Descripcion" name="description" required></textarea>
             </div>
+            
             <div class="input-box">
                 <input type="hidden" name = "accionProduct" value = "RegisterProduct" >
                 <input type="submit" value="Registrar Producto" class="submit">

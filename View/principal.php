@@ -20,7 +20,7 @@
         <button>Comprar</button>
       </div>
       <div class="imagen-inicio">
-        <img src="./img/entrenador.png" alt="">
+        <img class="imageninicio-entrenador" src="./img/entrenador.png" alt="">
       </div>
     </div>
   </div>

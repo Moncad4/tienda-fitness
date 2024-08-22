@@ -191,6 +191,7 @@ a{
 .contenedor-inicio{
   display: flex;
   flex-direction: row;
+  height: 100%;
 }
 
 .descripcion-inicio{
@@ -228,10 +229,11 @@ a{
 }
 
 .imagen-inicio{
-  width: 50%;
-  height: 97.2vh;
   display: flex;
   justify-content: center;
+  width: 50%;
+  height: 90%;
+  margin-top: 3.6rem;
 }
 
 /* seccion productos */

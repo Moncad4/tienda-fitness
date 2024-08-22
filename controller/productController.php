@@ -29,7 +29,7 @@ class ProductControllerReg{
 
           if($registroP){
             echo '<script>alert("REGISTRO EXITOSO");
-                  window.location.href = "View/components/subComponents-tienda/registerproduct.php";
+                  window.location.href = "View/components/subComponents-tienda/registerproduct.php#register";
               </script>';
               exit;
           }

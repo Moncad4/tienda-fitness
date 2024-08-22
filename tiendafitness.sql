@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-08-2024 a las 02:02:55
+-- Tiempo de generación: 22-08-2024 a las 05:52:15
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -34,8 +34,19 @@ CREATE TABLE `product` (
   `price` int(15) NOT NULL,
   `image` longblob NOT NULL,
   `discount` int(3) NOT NULL,
-  `price-discount` int(15) NOT NULL
+  `priceDiscount` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `product`
+--
+
+INSERT INTO `product` (`product_id`, `tittle`, `description`, `price`, `image`, `discount`, `priceDiscount`) VALUES
+(2, 'super power', 'sano fuerte y lindo', 150000, '', 3000, 147000),
+(3, 'protein loco', 'te vuelve loco', 200000, '', 10000, 190000),
+(4, 'calcio', 'fuerza en los huesos', 250000, '', 20000, 230000),
+(6, 'no me grite', 'que bebesote', 300000, 0x696d6167655f363662613866346538363338322e6a7067, 120000, 180000),
+(7, 'evolution fit', 'te evoluciona a tu limite', 200000, 0x696d6167655f363662616463646233653934622e6a7067, 50000, 150000);
 
 -- --------------------------------------------------------
 
@@ -82,7 +93,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `product_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
