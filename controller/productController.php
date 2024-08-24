@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__.'/../model/productModel.php');
 
-
+// registro de los productos con imagen
 class ProductControllerReg{
   public function RegistroProduct(){
       if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -39,6 +39,8 @@ class ProductControllerReg{
       }
   }
 }
+
+// Esto es lo que lleva los productos a la tienda
 
 class ProductoController{
   public function viewProductoController(){

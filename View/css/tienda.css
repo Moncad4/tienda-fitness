@@ -9,11 +9,13 @@ botones de las estrellas */
   background-color: rgb(36, 18, 54);
   padding-top: 4.6rem;
 }
+
 .main-shop-aside{
   display: flex;
   flex-direction: column;
   padding: 1em;
 }
+
 .main-shop{
   display: flex;
   flex-direction: column;
@@ -21,16 +23,19 @@ botones de las estrellas */
   height: 200%;
   width: 100%;
 }
+
 .main-shop-publicity{
   display: flex;
   justify-content: flex-end;
   background-color: black;
 }
+
 .main-shop-searchs{
   display: flex;
   padding: 1.5em;
   color: aliceblue;
 }
+
 .main-shop-navfilters{
   position: relative;
   padding: 0.5em;
@@ -38,10 +43,12 @@ botones de las estrellas */
   width: 100%;
   border-radius: 0.4em;
 }
+
 .mainshop-navfiltertex{
   font-weight: bold;
   margin: 0 1.5em;
 }
+
 .main-shop-btnfilters{
   margin: 0.5em;
   padding: 0.6em;
@@ -49,17 +56,20 @@ botones de las estrellas */
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.2);
   border: 0;
 }
+
 .mainshop-btnfilters-efect2:hover{
   background-color: rgb(0, 255, 0);
   color: white;
   cursor: pointer;
   border: none;
 }
+
 .mainshop-btnfil{
   position: absolute; 
   right: 0;
   margin-right: 2em;
 }
+
 /* Aquí están los articulos el grid*/
 .containergridshop-articles{
   display: grid;
@@ -70,6 +80,7 @@ botones de las estrellas */
   width: 80vw;
   gap: 1em;
 }
+
 .articleshop-maincards{
   background-color: white;
   display: flex;
@@ -79,6 +90,7 @@ botones de las estrellas */
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.624);
 }
+
 .imgproducts-shop{
   display: absolute;
   object-fit: cover;
@@ -86,6 +98,7 @@ botones de las estrellas */
   width: 53%; 
   margin: 0.7rem;
 }
+
 .cardsartice-shop{
   background-color: white;
   display: flex;
@@ -95,6 +108,7 @@ botones de las estrellas */
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(255, 255, 255, 0.624);
 }
+
 .gridshop-botonbuyandetails{
   display: flex;
   justify-content: space-between;
@@ -118,6 +132,7 @@ botones de las estrellas */
   position: relative;
   margin-top: 0.5rem;
 }
+
 .icon-container {
   position: absolute;
   left: -50px;
@@ -132,9 +147,11 @@ botones de las estrellas */
   z-index: 2;
   transition-duration: .5s;
 }
+
 .icon {
   border-radius: 1px;
 }
+
 .addcart-text {
   height: 100%;
   width: fit-content;
@@ -147,10 +164,12 @@ botones de las estrellas */
   font-size: 1.04em;
   font-weight: 600;
 }
+
 .addcart-text:hover {
   color: rgb(255, 255, 255);
 }
-.addcart-textindi{
+
+.detailsproducts-link{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,20 +177,24 @@ botones de las estrellas */
   font-size: 1.04em;
   font-weight: 600;
   color: rgb(0, 0, 0);
-  margin-top: 0.8em;
+  margin-top: 0.1em;
 }
-.addcart-textindi:hover{
+
+.detailsproducts-link:hover{
   color: rgb(149, 0, 255);
 }
+
 .cart-btn:hover .icon-container {
   transform: translateX(58px);
   border-radius: 40px;
   transition-duration: .5s;
 }
+
 .cart-btn:hover .addcart-text {
   transform: translate(10px,0px);
   transition-duration: .5s;
 }
+
 .cart-btn:active {
   transform: scale(0.95);
   transition-duration: .5s;
@@ -183,32 +206,38 @@ botones de las estrellas */
   padding: 20px;
   border-right: 1px solid #ddd;
 }
+
 .main-shop-aside h2 {
   font-size: 1.5em;
   margin-bottom: 1.7em;
   margin-top: 2em;
   color: aliceblue;
 }
+
 .main-shop-filter {
   margin-bottom: 20px;
 }
+
 .main-shop-filter h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: aliceblue;
 }
+
 .main-shop-filter label {
   display: block;
   margin: 5px 0;
   font-size: 0.8em;
   color: rgba(243, 243, 243, 0.933);
 }
+
 .main-shop-filter input[type="number"] {
   width: 100%;
   padding: 3px;
   margin-bottom: 10px;
   box-sizing: border-box;
 }
+
 .filter-button {
   display: inline-block;
   padding: 10px 20px;
@@ -221,11 +250,13 @@ botones de las estrellas */
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
 .filter-button:hover {
   color: rgb(255, 255, 255);
   background-image: linear-gradient(147deg, #00ff80 0%, #33ff00 74%);
   font-weight: bold;
 }
+
 /* Las estrellas botones de puntuación */
 .days-btn-container {
   display: flex;
@@ -233,9 +264,11 @@ botones de las estrellas */
   justify-content: space-evenly;
   height: 34px;
 }
+
 .day-btn {
   display: none;
 }
+
 .days-btn-container label {
   background-image: linear-gradient(147deg, #5803e9 0%, #a600ff 74%);
   font-size: 0.8rem;
@@ -249,9 +282,9 @@ botones de las estrellas */
   align-items: center;
   justify-content: center;
 }
+
 .day-btn:checked + .day-label2 {
   background-color: #9d00ff;
-  /* background-image: linear-gradient(147deg, #5803e9 0%, #a600ff 74%); */
   background-image: linear-gradient(147deg, #00ff62 0%, #7bff00 74%);
   border: none;
   color: white;
@@ -259,38 +292,80 @@ botones de las estrellas */
 
 
 
-/* menu  de inicio sesion */
-.hovershop-product li:hover ul {
-  display: block;
-}
-
-.hovershop-product ul{
+/* Los detalles de los productos */
+/* Modal */
+.detailsproducts-modal {
   display: none;
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  height: 150vh;
-  top: 44%;
-  left: 20%;
-  z-index: 80;
-}
-
-.hovershoproduct-container{
-  display: flex;
-  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
-.hovershoproduct-container h2{
-  margin-top: 2rem;
+
+.detailsproducts-modal:target {
+  display: flex;
+}
+
+/* contenedor del modal*/
+.detailsproductsmodal-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 5px;
+  height: 92vh;
+  width: 55%;
+  text-align: center;
+}
+
+.detailsproducts-header{
+  height: 12vh;
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+.detailsproductsmodal-close:hover {
+  background-color: #00cc28;
+}
+
+.detailsproducts-x{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 4vh;
+  width: 90%; 
+}
+
+.detailsproductsmodal-content h2{
+  margin-top: 0.5rem;
   font-size: 2rem;
   color: #00ff33;
 }
-.hovershop-parr{
-  margin-top: 1rem;
+
+.detailsproductsmodal-containerimgproducts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 35%; 
 }
-.hovershoproduct-productsImg{
-  height: 50vh;
-  width: auto;
-  margin: 1rem;
+
+.detailsproductsmodal-imgproducts{
+  height: 100%;
+  width: 100%; 
+}
+
+.detailsmodal-productdescription{
+  font-size: 1rem;
+  margin: 0.3rem;
 }

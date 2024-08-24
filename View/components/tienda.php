@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/tienda.css">
 </head>
 <body>
+  
   <?php
     require_once(__DIR__.'/../../controller/productController.php');
     require '../layout/header.php';
@@ -100,7 +101,11 @@
             <img class="imgproducts-shop" src="../../imgProduct/<?php echo $producto['image'] ?>" alt="">
             <!-- <p><?php echo $producto['product_id'] ?></p> -->
             <div class="gridshop-botonbuyandetails">
-              <button class="cart-btn" onclick="agregarAlCarrito(<?php echo $producto['product_id'];?>, '<?php echo $producto['tittle'];?>', '<?php echo $producto['price'];?>', '<?php echo $producto['discount'];?>', '<?php echo $producto['priceDiscount'];?>')">
+              <button class="cart-btn" onclick="agregarAlCarrito(
+                <?php echo $producto['product_id'];?>, 
+              '<?php echo $producto['tittle'];?>', '<?php echo $producto['price'];?>', 
+              '<?php echo $producto['discount'];?>', '<?php echo $producto['priceDiscount'];?>', 
+              '<?php echo BASE_URL . "imgProduct/" . $producto['image']; ?>')">
                 <span class="icon-container"> 
                   <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
                 </span>
@@ -109,31 +114,43 @@
                 </p>
               </button> 
 
-              <ul class="hovershop-product">
-                <li>
-                  <p class="addcart-text addcart-textindi">Detalles...</span> </p> 
-                    <ul> 
-                      <div class="hovershoproduct-container">
-                      <h2><?php echo $producto['tittle'] ?></h2>
-                      <p><img class="imgproducts-shop" src="../../imgProduct/<?php echo $producto['image'] ?>" alt=""></p> 
-                      <p>Descripción: <?php echo $producto['description'] ?></p>
-                      <p>Precio: <?php echo $producto['price'] ?>
-                        Descuento: <?php echo $producto['discount'] ?>
-                        Precio con descuento: <?php echo $producto['priceDiscount'] ?></p>
-                      
-                      <button class="cart-btn" onclick="agregarAlCarrito(<?php echo $producto['product_id'];?>, '<?php echo $producto['tittle'];?>', '<?php echo $producto['price'];?>', '<?php echo $producto['discount'];?>', '<?php echo $producto['priceDiscount'];?>')">
-                        <span class="icon-container"> 
-                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
-                        </span>
-                        <p class="addcart-text">
-                          Add to Cart
-                        </p>
-                      </button> 
+              <a href="#modal-<?php echo $producto['product_id']; ?>" class="addcart-text detailsproducts-link">Detalles...</a>
 
-                      </div>
-                    </ul>
-                </li>
-              </ul> 
+              <div id="modal-<?php echo $producto['product_id']; ?>" class="detailsproducts-modal">
+
+              <div class="detailsproductsmodal-content">
+                <div class="detailsproducts-header">
+                <span class="detailsproducts-x"><a href="#" class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                  </svg>
+                </a></span> 
+                <h2><?php echo $producto['tittle'] ?></h2>
+                </div>
+
+                <div class="detailsproductsmodal-containerimgproducts">
+                  <img class="detailsproductsmodal-imgproducts" src="../../imgProduct/<?php echo $producto['image'] ?>" alt=""></p> 
+                </div>
+
+                <p class="detailsmodal-productdescription"><?php echo $producto['description'] ?>
+                <p class="detailsmodal-productdescription"> 
+                  <br>Precio: <?php echo $producto['price'] ?>
+                  <br>Descuento: <?php echo $producto['discount'] ?>
+                  <br>Precio con descuento: <?php echo $producto['priceDiscount'] ?></p>
+
+                  <button class="cart-btn" onclick="agregarAlCarrito(<?php echo $producto['product_id'];?>, '<?php echo $producto['tittle'];?>', '<?php echo $producto['price'];?>', '<?php echo $producto['discount'];?>', '<?php echo $producto['priceDiscount'];?>', '<?php echo "../../imgProduct/" . $producto['image']; ?>')">
+                  <span class="icon-container"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                  </span>
+                  <p class="addcart-text">
+                    Add to Cart
+                  </p>
+                </button> 
+
+              </div>
+            </div>
 
             </div>
         </div>

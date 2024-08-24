@@ -2,6 +2,7 @@
 session_start();
 require_once(__DIR__.'/../model/UserModel.php');
 
+// Registra los usuarios
 class UsersControllerReg{
   public function Registro(){
       if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -26,6 +27,7 @@ class UsersControllerReg{
   }
 }
 
+// Login de usuarios
 class LogInController{
   public function LogIn(){
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -52,7 +54,7 @@ class LogInController{
   }
 }
 
-// user_information
+// Sesiones de usuario verifica y restringe
 class perfilInformation{
   public function showProfile(){
     if(session_status() == PHP_SESSION_NONE){
@@ -70,6 +72,7 @@ class perfilInformation{
   }
 }
 
+// Menu desplegable de usuarios 
 class headerInformation{
   public function showProfileHeader(){
     if(session_status() == PHP_SESSION_NONE){
@@ -85,7 +88,7 @@ class headerInformation{
   }
 }
 
-// Login administrator controller
+// Login administrator panel
 class LogInAdmController{
   public function LogInAdm(){
     if($_SERVER['REQUEST_METHOD'] === 'POST'){

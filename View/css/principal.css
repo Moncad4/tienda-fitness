@@ -123,7 +123,7 @@ a{
   z-index: 998;
 }
 
-/* carrito de compras */
+/* carrito de compras dibujado por el js*/
 .carrito-compras .icon-cart{
   position: relative;
   cursor: pointer;
@@ -154,6 +154,9 @@ a{
   display: grid;
   grid-template-rows: 70px 1fr 70px;
   transition: .5s;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #00ff08 #4c4e4c;
 }
 
 .showCart .cartTab{
@@ -177,16 +180,81 @@ a{
 }
 
 .cartTab .btn-carrito button{
-  background-color: yellow;
+  background-color: rgb(0, 212, 0);
   border: none;
   font-weight: 500;
   cursor: pointer;
-  height: 70px;
+  height: 3rem;
+  margin-top: 1.1rem;
+}
+
+.cartTab .btn-carrito button:hover{
+  background-color: rgb(225, 221, 5);
 }
 
 .cartTab .btn-carrito .close-carrito{
   background-color: #eee;
 }
+
+
+/* Modicación de lo que va al carro */
+.listcart{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #fff;
+  margin: 0.2rem;
+}
+
+.listcart-fonts{
+  color: #000000;
+}
+
+.listcart-deletebtn {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background-color: #00ff33;
+  color: #000;
+  font-size: 0.7rem; 
+  border-radius: 5px;
+  border-color: aliceblue;
+  height: 7vh;
+}
+
+.liscart-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liscart-gridone{
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liscart-gridtwo{
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.liscart-gridthree{
+  grid-column: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartshop-img{
+  display: absolute;
+  object-fit: cover;
+  height: 13vh;
+  width: 65%; 
+  margin: 0.7rem;
+}
+
 /* inicio */
 .contenedor-inicio{
   display: flex;

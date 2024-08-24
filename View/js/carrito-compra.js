@@ -11,7 +11,7 @@ closeCarrito.addEventListener('click', () => {
 })
 
 // ver productos en el carrito
-function agregarAlCarrito(product_id, tittle, price, discount, priceDiscount) {
+function agregarAlCarrito(product_id, tittle, price, discount, priceDiscount, image) {
   let carrito = JSON.parse(localStorage.getItem('cartTab')) || [];
   
   let producto = {
@@ -19,8 +19,8 @@ function agregarAlCarrito(product_id, tittle, price, discount, priceDiscount) {
       tittle: tittle,
       price: price,
       discount: discount,
-      priceDiscount: priceDiscount
-      // imagen: imagen
+      priceDiscount: priceDiscount,
+      image: image
   };
   
   carrito.push(producto);
@@ -37,9 +37,10 @@ function actualizarCarrito() {
       carritoHTML += `
         
         <div class="listcart">
-          <span>${producto.tittle}</span>
-          <span>$${producto.price}</span>
-          <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
+          <span class="liscart-gridone"><img class="cartshop-img" src="${producto.image}" alt="${producto.tittle}" /></span>
+          <span class="listcart-fonts liscart-gridtwo">${producto.tittle}</span>
+          <span class="listcart-fonts liscart-price">$${producto.price}</span>
+          <span class="liscart-gridthree"> <button class="listcart-deletebtn" onclick="eliminarDelCarrito(${index})">Eliminar</button></span>
         </div>
         
       `;
