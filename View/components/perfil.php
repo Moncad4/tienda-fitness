@@ -83,23 +83,23 @@ $userPerfil = $perfil->showProfile();
     </div>
 
     <div class="subContainer-informationPerfil">
-      <div class="information-nickName">
-        <h3>Nombre</h3>
-        <span> <?php echo $userPerfil['NickName'] ?> </span>
-      </div>
+      <div class="container-information">
+        <div class="information-nickName">
+          <h3>Nombre</h3>
+          <span> <?php echo $userPerfil['NickName'] ?> </span>
+        </div>
 
-      <div class="information-lastName">
-        <h3>Apellido</h3>
-        <span> <?php echo $userPerfil['LastName'] ?> </span>
-      </div>
+        <div class="information-lastName">
+          <h3>Apellido</h3>
+          <span> <?php echo $userPerfil['LastName'] ?> </span>
+        </div>
 
-      <div class="information-email">
-        <h3>Correo</h3>
-        <span> <?php echo $userPerfil['Email'] ?> </span>
+        <div class="information-email">
+          <h3>Correo</h3>
+          <span> <?php echo $userPerfil['Email'] ?> </span>
+        </div>
       </div>
-
     </div>
   </section>
 </body>
-<!-- echo $userPerfil['NickName'] -->
 </html>
