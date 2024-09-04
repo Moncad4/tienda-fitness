@@ -81,9 +81,9 @@
         <button class="main-shop-btnfilters mainshop-btnfilters-efect2">Ultimo agregado</button>
         <button class="main-shop-btnfilters mainshop-btnfilters-efect2">Promociones</button> 
         <select class="mainshop-btnfil main-shop-btnfilters" name="" id="">
-          <option value="">Menor precio</option>
-          <option value="">Mayor precio</option>
-          <option value="">Top ventas</option>
+          <option value="1">Menor precio</option>
+          <option value="2">Mayor precio</option>
+          <option value="3">Top ventas</option>
         </select>
       </p>
     </div>
@@ -151,7 +151,6 @@
 
               </div>
             </div>
-
             </div>
         </div>
       <?php } ?>
