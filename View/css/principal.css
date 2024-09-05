@@ -300,6 +300,16 @@ a{
   border: none;
 }
 
+.descripcion-inicio button:hover{
+  margin-top: 25px;
+  padding: 15px 50px;
+  border-radius: 30px;
+  background-color: rgba(0, 247, 0, 0.73);
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
 .imagen-inicio{
   display: flex;
   justify-content: center;
@@ -364,9 +374,9 @@ a{
 
 .slider .list .item .content .title,
 .slider .list .item .content .type{
-  font-size: 5em;
+  font-size: 4rem;
   font-weight: bold;
-  line-height: 1.3em;
+  line-height: 1.2em;
   width: 50%;
 }
 
@@ -388,12 +398,15 @@ a{
 
 .slider .list .item .boton-producto button{
   border: none;
-  background-color: #eee;
+  background-color: #00ff33;
   font-family: Poppins;
   font-weight: 500;
+  font-size: 0.7rem;
   cursor: pointer;
   transition: 0.4s;
   letter-spacing: 2px;
+  color: aliceblue;
+  border-radius: 1rem;
 }
 
 .slider .list .item .boton-producto button:hover{
@@ -449,7 +462,7 @@ a{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #14ff72cb;
+  background-color: #00fd3bcb;
   border: none;
   color: #fff;
   font-family: monospace;
@@ -608,6 +621,13 @@ a{
   border-radius: 30px;
 }
 
+.verMas-Productos:hover{
+
+  background-color: rgb(115, 0, 255);
+
+}
+
+
 @media screen and (max-width: 678px) {
   .slider .list .item .content{
       padding-right: 0;
@@ -671,6 +691,10 @@ a{
   border-radius: 30px;
 }
 
+.descripcion-seccion-nosotros a:hover{
+  background-color: rgb(51, 255, 0);
+}
+
 /* seccion 3 ayudas */
 .seccion-ayudas{
   display: flex;
@@ -728,6 +752,10 @@ a{
   border-radius: 30px;
 }
 
+.subContainer-descripcion-ayudas a:hover{
+  background-color: rgb(51, 255, 0);
+}
+
 /* sesion envio de correo */
 .sesion-enviarCorreo{
   background-color: rgb(31, 9, 51);
@@ -768,6 +796,12 @@ a{
   cursor: pointer;
   margin-left: 10px;
 }
+
+.div-correo button:hover{
+  background-color: #00ff08;
+  cursor: pointer;
+}
+
 
 /* footer */
 .footer{

@@ -5,6 +5,8 @@ $perfil = new headerInformation();
 $userPerfil = $perfil->showProfileHeader();
 ?>
 
+<link rel="stylesheet" href="../css/header.css">
+
 <body class="">
     <header class="container-header">
       <nav class="navegador">
@@ -13,12 +15,12 @@ $userPerfil = $perfil->showProfileHeader();
         </div>
         <div class="div-list-nav">
           <ul class="list-nav">
-            <li><a href="<?php echo BASE_URL; ?>View/principal.php">Inicio</a></li>
-            <li><a href="<?php echo BASE_URL; ?>View/components/tienda.php">Tienda</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="<?php echo BASE_URL; ?>View/components/ayudas.php">Ayudas</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li class="inicio-sesion">
+            <li class="principal-btns"><a href="<?php echo BASE_URL; ?>View/principal.php">Inicio</a></li>
+            <li class="principal-btns"><a href="<?php echo BASE_URL; ?>View/components/tienda.php">Tienda</a></li>
+            <li class="principal-btns"><a href="#">Nosotros</a></li>
+            <li class="principal-btns"><a href="<?php echo BASE_URL; ?>View/components/ayudas.php">Ayudas</a></li>
+            <li class="principal-btns"><a href="#">Contacto</a></li>
+            <li class="inicio-sesion principal-btns">
                 <?php if(isset($userPerfil)){ ?>
                 <ul class="menu-inicioSesion">
                   <li>

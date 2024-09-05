@@ -200,7 +200,6 @@ botones de las estrellas */
   transition-duration: .5s;
 }
 
-
 /* Este es el aside */
 .main-shop-aside {
   padding: 20px;
@@ -289,8 +288,6 @@ botones de las estrellas */
   border: none;
   color: white;
 }
-
-
 
 /* Los detalles de los productos */
 /* Modal */

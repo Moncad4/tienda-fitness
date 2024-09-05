@@ -190,6 +190,87 @@ aside ul{
   background-color: rgb(255, 255, 255);
 }
 
+.delete-tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardadministrator-delete .dashboardelete-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: minmax(40vh, 35%);
+  gap: 1em;
+  background-color: rgb(36, 18, 54);
+  height: 95%;
+  width: 97%;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; 
+}
+
+.dashboardelete-container .dashboardelete-cartgridproductcontent{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.624);
+}
+
+.dashboardelete-titleproduct{
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+.dashboardelete-idproduct{
+  color: red;
+}
+
+.dashboardelete-infoproducts{
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboardelete-imgproductcontainer{
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  width: 95%; 
+}
+
+.dashboardelete-imgproduct{
+  display: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%; 
+}
+
+.dashboardelete-parrproduct{
+  width: 100%;
+}
+
+.dashboardelete-svgcotainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 90%;
+  height: 12%;
+}
+
+.dashboardelete-svg {
+  height: 1.4rem;
+  fill: rgb(255, 0, 0);
+  transition: fill 0.3s ease; 
+  padding-bottom: 0.2rem;
+}
+
+.dashboardelete-svg:hover {  
+  fill: #1aff00;
+}
+
 /* Editar productos */
 .dashboardadministrator-edict{
   display: none;
