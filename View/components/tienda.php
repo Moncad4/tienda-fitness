@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/principal.css">
   <link rel="stylesheet" href="../css/tienda.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   
@@ -136,9 +137,9 @@
 
                 <p class="detailsmodal-productdescription"><?php echo $producto['description'] ?>
                 <p class="detailsmodal-productdescription"> 
-                  <br>Precio: <?php echo $producto['price'] ?>
-                  <br>Descuento: <?php echo $producto['discount'] ?>
-                  <br>Precio con descuento: <?php echo $producto['priceDiscount'] ?></p>
+                  <br><span class="detailsmodal-producttittles">Precio: </span><?php echo $producto['price'] ?>
+                  <br><span class="detailsmodal-producttittles">Descuento: </span><?php echo $producto['discount'] ?>
+                  <br><span class="detailsmodal-producttittles">Precio con descuento: </span><?php echo $producto['priceDiscount'] ?></p>
 
                   <button class="cart-btn" onclick="agregarAlCarrito(<?php echo $producto['product_id'];?>, '<?php echo $producto['tittle'];?>', '<?php echo $producto['price'];?>', '<?php echo $producto['discount'];?>', '<?php echo $producto['priceDiscount'];?>', '<?php echo "../../imgProduct/" . $producto['image']; ?>')">
                   <span class="icon-container"> 

@@ -1,6 +1,10 @@
 /* Cambiar las clases de el botón days, arreglar los
 botones de las estrellas */
 
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 
 /* Toda la tienda esta aqui */
 .mainshop-container{
@@ -365,4 +369,9 @@ botones de las estrellas */
 .detailsmodal-productdescription{
   font-size: 1rem;
   margin: 0.3rem;
+}
+
+.detailsmodal-producttittles{
+  color: #5803e9;
+  font-weight: bold;
 }

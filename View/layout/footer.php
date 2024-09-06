@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../css/principal.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 <footer class="footer">
     <div class="container-footer">

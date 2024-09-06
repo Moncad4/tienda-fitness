@@ -1,9 +1,12 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 .div-list-nav .list-nav a:hover {
   color: blueviolet;
 }
 
 .contenedor-logo .header-logopage{
-
   height: 5vh;
   width: 3vw;
 }

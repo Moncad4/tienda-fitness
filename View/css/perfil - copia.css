@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.body-perfil{
+  background-color: rgb(45, 22, 66);
+}
+
+.container-sectionPerfil{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.subContainer-deailsPerfil{
+  width: 40%;
+}
+
+.picture-Perfil{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture-Perfil img{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.picture-Perfil h4{
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.container-buttonsPerfil{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+/* botones de cambios */
+.buttonPerfil {
+  position: relative;
+  width: 55%;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
+  overflow: hidden;
+}
+
+.buttonPerfil, .icon-buttonPerfil, .name-buttonPerfil {
+  transition: all 0.3s;
+}
+.name-buttonPerfil {
+  transform: translateX(10px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.icon-buttonPerfil {
+  position: absolute;
+  transform: translateX(16.2rem);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-buttonPerfil svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.buttonPerfil:hover {
+  background: #17795E;
+}
+
+.buttonPerfil:hover .name-buttonPerfil{
+  color: transparent;
+}
+
+.buttonPerfil:hover .icon-buttonPerfil {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.buttonPerfil:active .button__icon {
+  background-color: #146c54;
+}
+
+.buttonPerfil:active {
+  border: 1px solid #146c54;
+}
+
+/* contenedor de la informacion personal */
+.subContainer-informationPerfil{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 95px;
+}
+.container-information{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 8px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.information-nickName, .information-lastName{
+  margin-bottom: 40px;
+}
+
+.information-nickName h3, .information-lastName h3, .information-email h3{
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.information-nickName span, .information-lastName span, .information-email span{
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+
