@@ -18,10 +18,6 @@ class UserModelReg{
       $stmt = $conn->prepare($sql);
       $stmt->bind_param("ssss", $Nick, $last, $email, $pass);
 
-      $result = $stmt->execute();
-      $stmt->close();
-      $conn->close();
-      return $result;
   }
 }
 

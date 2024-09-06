@@ -11,7 +11,7 @@ $userPerfil = $perfil->showProfileHeader();
     <header class="container-header">
       <nav class="navegador">
         <div class="contenedor-logo">
-          <a href="<?php echo BASE_URL; ?>View/principal.php"><h2>Logo</h2></a>
+          <a href="<?php echo BASE_URL; ?>View/principal.php"><h2>Fitprogmer</h2></a>
         </div>
         <div class="div-list-nav">
           <ul class="list-nav">

@@ -2,77 +2,115 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+#ayudas-tittle{
+  margin-top: 5rem;
+  font-size: 2.3rem;
 }
 
-.background-ayudas{
-  background-color: rgb(45, 22, 66);
+.background-ayudas {
+  background-color: #2D1642;
+  padding-bottom: 50px;
 }
-.section-comp-ayudas{
+
+.section-comp-ayudas {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container-comp-ayudas{
-  width: 60%;
-  border: 3px solid black;
+.container-comp-ayudas {
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  height: 50vh;
+  background-color: rgba(39, 4, 68, 0.974);
+  transition: transform 0.3s ease;
 }
 
-.dieta-ayudas{
-  margin-bottom: 40px;
-}
 
-.section-comp-ayudas h2{
-  margin-top: 50px;
-  color: aliceblue;
-  font-size: 50px;
-
-}
-
-.container-comp-ayudas a{
+.container-comp-ayudas a {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  text-decoration: none;
 }
 
-.agua-ayudas a{
-  display: flex;
+.agua-ayudas a {
   flex-direction: row-reverse;
 }
 
-.subContainer-comp-ayudas{
+.subContainer-comp-ayudas {
   width: 50%;
-  display: flex;
-  flex-direction: row;
+  overflow: hidden;
 }
 
-.subContainer-comp-ayudas img{
+.subContainer-comp-ayudas img {
   width: 100%;
-  height: 49vh;
-  background-size: cover;
+  height: 100%;
+  object-fit: cover;
 }
 
-.subContainer2-comp-ayudas{
+
+.subContainer2-comp-ayudas {
   width: 50%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.subContainer2-comp-ayudas h3{
-  width: 70%;
-  margin-bottom: 30px;
+.subContainer2-comp-ayudas h3 {
+  width: 100%;
+  margin-bottom: 20px;
   text-align: center;
-  color: aliceblue;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.subContainer2-comp-ayudas p{
-  width: 80%;
+.subContainer2-comp-ayudas p {
+  width: 90%;
   text-align: center;
-  color: #c0afd6;
+  color: #E0D4F7;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-comp-ayudas h2 {
+  margin-top: 50px;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container-comp-ayudas {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .subContainer-comp-ayudas,
+  .subContainer2-comp-ayudas {
+    width: 100%;
+    height: auto;
+  }
+
+  .subContainer2-comp-ayudas h3 {
+    font-size: 20px;
+  }
+
+  .subContainer2-comp-ayudas p {
+    font-size: 14px;
+  }
 }
