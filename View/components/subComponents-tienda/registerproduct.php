@@ -28,29 +28,31 @@ $totalUser = $detailsUserController->ConsultingUserModel();
     <span class="NameUserBanner"> <?php echo $userPerfil['NickName']?></span>
   </div> 
   <div class="navright-items">
-  ♥ <a href="<?php echo BASE_URL; ?>View/components/cerrarSesion.php">◙</a>  
-  <div>
+    <a href="<?php echo BASE_URL; ?>View/components/cerrarSesion.php">
+
+    <button class="logout-btn" onclick="logout()">↻</button>    </a>  
+  </div>
 </nav>
 <div class="dashboard-admin">
   <div class="divdashboard-left">
     <aside class="leftnavasidecontainer">
       <ul class="uldadboard-left">
       <label for="">Discover</label>
-        <li><button class="leftnavaside principalProductoBoton">♪ Principal</button></li>
-        <li class="leftnavaside">♠ 2</li>
-        <li class="leftnavaside">♦ 3</li>
+        <li><button class="leftnavaside principalProductoBoton">♦ Principal</button></li>
+        <li> <button class="leftnavaside principalProductoBoton"> ♦ Historial Pedidos</button> </li>
+        <li> <button class="leftnavaside principalProductoBoton"> ♦ Calificaciones</button> </li>
       </ul>
       <ul class="uldadboard-left">
       <label for="">Tools</label>
-        <li><button class="leftnavaside registerProductBoton">◙ Registrar</button></li>
-        <li><button href="" class="leftnavaside eliminarProductBoton">♀ Eliminar</button></li>
-        <li><button class="leftnavaside modificarProductBoton">► Modificar</button></li>
+        <li><button class="leftnavaside registerProductBoton">♦ Registrar</button></li>
+        <li><button href="" class="leftnavaside eliminarProductBoton">♦ Eliminar</button></li>
+        <li><button class="leftnavaside modificarProductBoton">♦ Modificar</button></li>
       </ul>
       <ul class="uldadboard-left">
         <label for="">Finance</label>
-        <li class="leftnavaside">↨ 1</li>
-        <li class="leftnavaside">↑ 2</li>
-        <li class="leftnavaside">↓ 3</li>
+        <li class="leftnavaside">♦ 1</li>
+        <li class="leftnavaside">♦ 2</li>
+        <li class="leftnavaside">♦ 3</li>
       </ul>
     </aside>
   </div>
@@ -78,7 +80,9 @@ $totalUser = $detailsUserController->ConsultingUserModel();
       <div class="gridquarter">44</div>
     </div>
     <div class="dbprincipal-gridbottom">
-      <div class="gripquarterbottom">55</div>
+      <div class="gripquarterbottom">
+55
+      </div>
       <div class="gripquarterbottom">66</div>
     </div>
   </div>
@@ -176,6 +180,7 @@ $totalUser = $detailsUserController->ConsultingUserModel();
                                 </div>
                                 <div class="input-box">
                                   <div class="input-box">
+                                    <input type="hidden" name="product_id" value="<?= $producto['product_id'] ?>">
                                     <input type="text" class="input-field" placeholder="Nombre del producto" name="product" value="<?= $producto['tittle'] ?>" required>
                                   </div>
                                 </div>
@@ -194,7 +199,7 @@ $totalUser = $detailsUserController->ConsultingUserModel();
 
                                 <!-- imagen -->
                                 <div class="input-box">
-                                  <input type="file" class="input-field" placeholder="Imagen" name="image1" value="<?= $producto['image'] ?>" required>
+                                  <input type="file" class="input-field" placeholder="Imagen" name="image1" value="<?= $producto['image'] ?>">
                                 </div>
 
                                 <div class="input-box">
@@ -202,8 +207,8 @@ $totalUser = $detailsUserController->ConsultingUserModel();
                                 </div>
   
                                 <div class="input-box">
-                                    <input type="hidden" name = "accionProduct" value = "RegisterProduct" >
-                                    <input type="submit" value="Registrar Producto" class="submit">
+                                    <input type="hidden" name = "SendEdictProduct" value = "EdicProductSend" >
+                                    <input type="submit" value="Editar Producto" class="submit">
                                 </div>
                               </form>
                             </div>

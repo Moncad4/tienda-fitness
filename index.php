@@ -31,4 +31,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     } 
   } 
 } 
+
+// Esto es el boton de edictar
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+  if(isset($_POST['SendEdictProduct'])){
+      if($_POST['SendEdictProduct'] === 'EdicProductSend'){
+        $productedicontroller = new ProductControllerEdict();
+        $productedicontroller->EdictProduct();
+      }
+    }
+  }
+
 ?>

@@ -102,6 +102,8 @@ class UserConsultingModel {
   }
 }
 
+// Esto es para editar los productos
+
 class ProductModelEdict{
   private $db;
 
@@ -109,18 +111,19 @@ class ProductModelEdict{
       $this->db = new Database();
   }
 
-  public function EdictProduct($product_id, $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct){
+  public function EdictProduct($productId, $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct){
       $conn =  $this->db->getConnection();
       if (!$conn){
           die("Error de conexión a la base de datos: ");
       }
 
-      $sql = "SELECT INTO product (product_id, tittle, description, price, image, discount, priceDiscount) VALUES (?,?,?,?,?,?,?)";
+      $sql = "UPDATE product SET tittle = ?, description = ?, price = ?, image = ?, discount = ?, priceDiscount = ? WHERE product_id = ?";
       $stmt = $conn->prepare($sql);
+
       if(is_array($imageProduct)){
         $imageProduct = implode(",", $imageProduct);
       }
-      $stmt->bind_param("ssisii", $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct);
+      $stmt->bind_param("ssdsdii", $nameProduct, $descriptionProduct, $priceProduct, $imageProduct, $discountProduct, $priceDiscountProduct, $productId);
 
       $result = $stmt->execute();
       $stmt->close();
