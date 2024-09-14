@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.perfil-picture h4{
+  color: #ffffff;
+}
+
 .perfil-picture img {
   width: 180px;
   height: 180px;
@@ -48,6 +52,10 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+}
+
+.detail-item h3{
+  color:#1eff00;
 }
 
 .perfil-action-button {

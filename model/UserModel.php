@@ -18,6 +18,12 @@ class UserModelReg{
       $stmt = $conn->prepare($sql);
       $stmt->bind_param("ssss", $Nick, $last, $email, $pass);
 
+      if ($stmt->execute()) {
+        return true; 
+    } else {
+        error_log("Error en la inserción: " . $stmt->error);
+        return false; 
+    }
   }
 }
 

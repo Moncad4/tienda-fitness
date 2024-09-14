@@ -19,7 +19,7 @@ $userPerfil = $perfil->showProfile();
   <section class="perfil-container">
     <div class="perfil-info">
       <div class="perfil-picture">
-        <img src="../img/nosotros-inicio.jpg" alt="Perfil">
+        <img src="../img/perfilprofile.jpg" alt="Perfil">
         <h4><?php echo $userPerfil['NickName'] . ' ' . $userPerfil['LastName']; ?></h4>
       </div>
 

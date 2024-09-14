@@ -40,6 +40,9 @@ class ProductControllerReg{
   }
 }
 
+// Consulta para el dashboard de la cantidad de productos
+
+
 // Esto es lo que lleva los productos a la tienda
 
 class ProductoController{

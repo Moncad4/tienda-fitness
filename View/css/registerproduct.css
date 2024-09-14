@@ -127,11 +127,25 @@ aside ul{
 }
 
 .gridquarter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 30vh;
   width: 100%;
   background-color: aliceblue;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.gridquarter h2{
+  font-size: 3.5rem;
+}
+
+.dashboardproductcounter{
+  color: #1aff00;
+  font-size: 1.3rem;
 }
 
 .dbprincipal-gridbottom {
@@ -195,6 +209,9 @@ aside ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 30px;
+  color: rgb(0, 201, 33);
+  font-weight: bold;
 }
 
 .dashboardadministrator-delete .dashboardelete-container{
@@ -262,6 +279,7 @@ aside ul{
 }
 
 .dashboardelete-svg {
+  background-color: white;
   height: 1.4rem;
   fill: rgb(255, 0, 0);
   transition: fill 0.3s ease; 
@@ -277,6 +295,58 @@ aside ul{
   display: none;
   background-color: rgb(255, 255, 255);
 }
+
+.dashboardadministrator-edict .dashboardedict-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: minmax(40vh, 35%);
+  gap: 1em;
+  background-color: rgb(36, 18, 54);
+  height: 95%;
+  width: 97%;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; 
+}
+
+.dashboardedict-container .dashboardedict-cartgridproductcontent{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.624);
+}
+.edict-tittle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(0, 201, 33);
+  font-weight: bold;
+}
+
+.dashboardedict-svgcotainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 90%;
+  height: 12%;
+}
+
+.dashboardedict-svg {
+  background: #fff;
+  height: 1.57rem;
+  fill: #1aff00;
+  transition: fill 0.3s ease; 
+  padding-bottom: 0.2rem;
+}
+
+.dashboardedict-svg:hover { 
+  fill: rgb(179, 0, 255); 
+}
+
 
 /* Login dashboard */
 .bglogin{

@@ -367,11 +367,11 @@ botones de las estrellas */
 }
 
 .detailsmodal-productdescription{
-  font-size: 1rem;
-  margin: 0.3rem;
+  font-size: 0.95rem;
+  box-sizing: border-box;
 }
 
-.detailsmodal-producttittles{
+.detailsmodal-productdescription .detailsmodal-producttittles{
   color: #5803e9;
   font-weight: bold;
 }

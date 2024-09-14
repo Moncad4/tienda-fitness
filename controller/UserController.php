@@ -11,17 +11,20 @@ class UsersControllerReg{
           $email = $_POST['Email'];
           $pass = $_POST['Pass'];
 
-          $user = new UserModelReg();
-          $registro =  $user->SignUpUser($Nick, $last, $email, $pass);
-
-          if($registro){
+          $userReg = new UserModelReg();
+          $regis =  $userReg->SignUpUser($Nick, $last, $email, $pass);
+          
+          if($regis){
               echo '<script>alert("REGISTRO EXITOSO");
                   window.location.href = "View/principal.php";
               </script>';
               exit;
           }
           else{
-              echo 'ERROR AL REGISTRAR';
+            echo '<script>
+            alert("REGISTRO FALLIDO}");
+            window.location.href = "View/principal.php";
+        </script>';
           }
       }
   }

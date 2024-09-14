@@ -1,8 +1,6 @@
 <?php
 require_once(__DIR__.'/controller/productController.php');
 require_once(__DIR__.'/controller/UserController.php');
-require_once(__DIR__.'/controller/dashboardeleteproduct.php');
-
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(isset($_POST['accion'])){
